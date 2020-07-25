@@ -1,0 +1,566 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Arial"] {font-family: arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+        h1, h2 {
+            display: block;
+            margin-block-start: 0em !important;
+            margin-block-end: 0em !important;
+            margin-inline-start: 0px !important;
+            margin-inline-end: 0px !important;
+            font-weight: normal !important;
+        }
+
+        p {
+            margin-block-start: 0em !important;
+            margin-block-end: 0em !important;
+        }
+
+        .thanks {
+            padding-top: 75px;
+        }
+
+        .thanks p {
+            font-size: 48px;
+            line-height: 56px;
+            color: #5240C4;
+            font-weight: bold;
+        }
+
+        .order-number {
+            padding-top: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #4F5A68;
+            mix-blend-mode: normal;
+        }
+
+        .line {
+            padding-top: 48px;
+            border-bottom: 1px solid rgba(79, 90, 104, 0.1);
+        }
+
+        .price {
+            padding-top: 24px;
+        }
+
+        .price p {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 44px;
+            color: #4F5A68;
+        }
+
+        .charged {
+            padding-top: 8px;
+        }
+
+        .charged p {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(79, 90, 104, 0.6);
+        }
+
+        .acc-link {
+            width: 82px;
+        }
+
+        .acc-link a {
+            text-decoration-color: #986DFF;
+        }
+
+        .acc-link p {
+            color: #986DFF;
+        }
+        
+        .order-table {
+            padding-top: 48px;
+        }
+
+        .order-details {
+            background-color: #ffffff;
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 24px;
+            color:  rgba(79, 90, 104, 0.6);
+        }
+
+        .order-details__text {
+            padding-top: 32px;
+        }
+
+        .order-details__text p {
+            color: #4F5A68;
+        }
+
+        .item-info {
+            padding-top: 24px;
+        }
+
+        .order-details__price {
+            font-weight: bold;
+            color: #4F5A68;
+            text-align: right;
+        }
+
+        .line-item {
+            border-bottom: 1px solid rgba(79, 90, 104, 0.1);
+            padding-top: 16px;
+        }
+
+        .line-item__dark {
+            border-bottom: 1px solid #4F5A68;
+            padding-top: 16px;
+        }
+
+        .info {
+            padding-top: 48px;
+        }
+
+        .info h2 {
+            font-size: 28px;
+            line-height: 36px;
+            color: #4F5A68;
+        }
+
+        .customer-info p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #4F5A68;
+        }
+
+        .about-customer {
+            padding-top: 8px;
+        }
+
+        .warning {
+            padding-top: 32px;
+        }
+
+        .warning p {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(79, 90, 104, 0.5);
+        }
+
+        .copyright {
+            padding-top: 48px;
+        }
+
+        .copyright a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @media(max-width: 414px) {
+            .table-680 {
+                max-width: 380px !important;
+            }
+            .table-560 {
+                max-width: 350px !important;
+            }
+
+            .table-512 {
+                max-width: 320px !important;
+            }
+
+            .table-280 {
+                max-width: 160px !important;
+            }
+        }
+
+        @media(max-width: 375px) {
+            .table-680 {
+                max-width: 335px !important;
+            }
+            .table-560 {
+                max-width: 305px !important;
+            }
+
+            .table-512 {
+                max-width: 280px !important;
+            }
+
+            .table-280 {
+                max-width: 140px !important;
+            }
+            
+            .thanks p {
+                font-size: 42px;
+                line-height: 48px;
+            }
+
+            .charged p {
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 320px) {
+            .table-680 {
+                max-width: 300px !important;
+            }
+            .table-560 {
+                max-width: 270px !important;
+            }
+
+            .table-512 {
+                max-width: 240px !important;
+            }
+
+            .table-280 {
+                max-width: 120px !important;
+            }
+        }
+
+	</style>
+</head>
+
+<body style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;line-height:100%;" >
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;" >Тестовое письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#5240C4" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+		<tr>
+            <td style="border-collapse:collapse;" >
+                <table class="main table-680" cellpadding="0" cellspacing="0" width="680" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                    <tr>
+                        <td height="30" width='680' bgcolor="#5240C4" style="border-collapse:collapse;" ></td>
+                    </tr>
+                    <tr>
+                        <td height="45" width='680' bgcolor="#F2F2F7" style="border-collapse:collapse;" ></td>
+                    </tr>
+                    <tr>
+                        <td class='logo' align='center' bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <a href='https://google.com'>
+                                <img src="https://romankushnarov.github.io/CustomMail/images/logo.png" alt="Logo" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='thanks' align='center' bgcolor="#F2F2F7" style="border-collapse:collapse;padding-top:75px;" >
+                            <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:48px;line-height:56px;color:#5240C4;font-weight:bold;" >Thank you<br>for your order</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='order-number' bgcolor="#F2F2F7" style="border-collapse:collapse;padding-top:24px;font-size:16px;line-height:24px;text-align:center;color:#4F5A68;mix-blend-mode:normal;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td align='center' style="border-collapse:collapse;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Invoice #650RGE-0050</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align='center' style="border-collapse:collapse;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Receipt #650RGE-0050</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='line' style="border-collapse:collapse;padding-top:48px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);" ></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="price" style="border-collapse:collapse;padding-top:24px;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-weight:bold;font-size:40px;line-height:44px;color:#4F5A68;" >$342,90</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='charged' bgcolor="#F2F2F7" style="border-collapse:collapse;padding-top:8px;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td style="border-collapse:collapse;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:rgba(79, 90, 104, 0.6);" >Card ending in 6505 was charged</p>
+                                    </td>
+                                    <td class='acc-link' style="border-collapse:collapse;width:82px;" >
+                                        <a href="https://google.com" style="text-decoration-color:#986DFF;" >
+                                            <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#986DFF;" >My account</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="order-table" bgcolor="#F2F2F7" style="border-collapse:collapse;padding-top:48px;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='order-details' style="border-collapse:collapse;background-color:#ffffff;border-radius:4px;font-size:16px;line-height:24px;color:rgba(79, 90, 104, 0.6);" >
+                                        <table class="main table-512" cellpadding="0" cellspacing="0" width="512" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class='order-details__text' style="border-collapse:collapse;padding-top:32px;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;color:#4F5A68;" >Order details</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='item-info' style="border-collapse:collapse;padding-top:24px;" >
+                                                    <table style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                                        <tr>
+                                                            <td class="main table-512" cellpadding="0" cellspacing="0" width="512" style="border-collapse:collapse;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Apple Watch Series 3</p>
+                                                            </td>
+                                                            <td class='order-details__price' style="border-collapse:collapse;font-weight:bold;color:#4F5A68;text-align:right;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >$300,00</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line-item" style="border-collapse:collapse;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);padding-top:16px;" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='item-info' style="border-collapse:collapse;padding-top:24px;" >
+                                                    <table style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                                        <tr>
+                                                            <td class="main table-512" cellpadding="0" cellspacing="0" width="512" style="border-collapse:collapse;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Watch band</p>
+                                                            </td>
+                                                            <td class='order-details__price' style="border-collapse:collapse;font-weight:bold;color:#4F5A68;text-align:right;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >$42,90</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line-item" style="border-collapse:collapse;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);padding-top:16px;" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='item-info' style="border-collapse:collapse;padding-top:24px;" >
+                                                    <table style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                                        <tr>
+                                                            <td class="main table-512" cellpadding="0" cellspacing="0" width="512" style="border-collapse:collapse;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >VAT (10%)</p>
+                                                            </td>
+                                                            <td class='order-details__price' style="border-collapse:collapse;font-weight:bold;color:#4F5A68;text-align:right;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >$3,42</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line-item" style="border-collapse:collapse;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);padding-top:16px;" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='item-info' style="border-collapse:collapse;padding-top:24px;" >
+                                                    <table style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                                        <tr>
+                                                            <td class="main table-512" cellpadding="0" cellspacing="0" width="512" style="border-collapse:collapse;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Shipping</p>
+                                                            </td>
+                                                            <td class='order-details__price' style="border-collapse:collapse;font-weight:bold;color:#4F5A68;text-align:right;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >Free</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line-item__dark" style="border-collapse:collapse;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#4F5A68;padding-top:16px;" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td class='item-info' style="padding-bottom:32px;border-collapse:collapse;padding-top:24px;" >
+                                                    <table style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                                        <tr>
+                                                            <td class="main table-512" cellpadding="0" cellspacing="0" width="512" style="border-collapse:collapse;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;color:#4F5A68;margin-block-start:0em !important;margin-block-end:0em !important;" >Total</p>
+                                                            </td>
+                                                            <td class='order-details__price' style="border-collapse:collapse;font-weight:bold;color:#4F5A68;text-align:right;" >
+                                                                <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;" >$342,90</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='line' style="border-collapse:collapse;padding-top:48px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);" ></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='info'" style="border-collapse:collapse;padding-top:48px;" >
+                                        <h2 style="font-family:Arial, Helvetica, sans-serif;display:block;margin-block-start:0em !important;margin-block-end:0em !important;margin-inline-start:0px !important;margin-inline-end:0px !important;font-weight:normal !important;font-size:28px;line-height:36px;color:#4F5A68;" >Customer information</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='about-customer' style="border-collapse:collapse;padding-top:8px;" >
+                                        <table class="main table-280" cellpadding="0" cellspacing="0" width="280" align="left" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;padding-bottom:8px;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >Shipping adress</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >Smiles Davis</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >600 Montgomery St</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >San Francisco, CA 94111</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >United States</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class='about-customer' style="border-collapse:collapse;padding-top:8px;" >
+                                        <table class="main table-280" cellpadding="0" cellspacing="0" width="240" align="right" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;padding-bottom:8px;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >Billing adress</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >Smiles Davis</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >600 Montgomery St</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >San Francisco, CA 94111</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='customer-info' style="border-collapse:collapse;" >
+                                                    <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:16px;line-height:24px;color:#4F5A68;" >United States</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='line' style="border-collapse:collapse;padding-top:48px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(79, 90, 104, 0.1);" ></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" class='warning' style="border-collapse:collapse;padding-top:32px;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td style="border-collapse:collapse;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif;margin-block-start:0em !important;margin-block-end:0em !important;font-size:14px;line-height:20px;color:rgba(79, 90, 104, 0.5);" >If you did not sign up for this account you can ignore this email and the account will be<br>deleted.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" class='warning' style="border-collapse:collapse;padding-top:32px;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td style="border-collapse:collapse;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif, 'Raleway';margin-block-start:0em !important;margin-block-end:0em !important;font-size:14px;line-height:20px;color:rgba(79, 90, 104, 0.5);" >© 2018 Craftingemails. All rights reserved.You received this email because you signed up<br>for an app that helps you create your emails, To update your emails subscription<br>preferences <a href="https://google.com" style="color:#986DFF;" >click here.</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F2F2F7" style="border-collapse:collapse;" >
+                            <table class="main table-560" cellpadding="0" cellspacing="0" width="560" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class='copyright' align="center" style="border-collapse:collapse;padding-top:48px;" >
+                                        <a  href="https://google.com"" style="font-family:Arial, Helvetica, sans-serif;color:#986DFF;font-size:14px;line-height:20px;" >View this email in the browser</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="45" width='680' bgcolor="#F2F2F7" style="border-collapse:collapse;" ></td>
+                    </tr>
+                    <tr>
+                        <td height="30" width='680' bgcolor="#5240C4" style="border-collapse:collapse;" ></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+	</table>
+</body>
+
+</html>
