@@ -287,8 +287,8 @@ h4 {
     margin-top: 40px;
     background: #3ABEFF;
     border-radius: 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     width: 300px;
     font-weight: bold;
     font-size: 16px;
@@ -350,7 +350,23 @@ h4 {
     margin-bottom: 10px;
 }
 
+.custom-option__arrow {
+    width: 630px;
+    position: relative;
+}
+
+.custom-option__arrow::after {
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: 30px;
+    background: url(https://romankushnarov.github.io/SBS/images/select-arrow.svg) center no-repeat;
+    width: 14px;
+    height: 7px;
+}
+
 .credit select {
+    -webkit-appearance: none;
     width: 630px;
     height: 68px;
     padding: 0 20px;
@@ -647,7 +663,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .consult input {
     margin-top: 20px;
-    padding: 25px 0 25px 30px;
+    padding: 24px 0 24px 30px;
     background: #FBFBFB;
     border: 1px solid #E5E5E5;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -667,8 +683,8 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-top: 20px;
     background: #3ABEFF;
     border-radius: 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     font-size: 16px;
     line-height: 19px;
     font-weight: bold;
@@ -760,8 +776,8 @@ input[type=range]::-webkit-slider-runnable-track {
     color: #FFFFFF;
     background: #3ABEFF;
     border-radius: 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     width: 409px;
     border: 4px solid #3ABEFF;
     margin: 0 auto;
@@ -952,6 +968,9 @@ input[type=range]::-webkit-slider-runnable-track {
     .main-wrapper {
         margin-top: 70px;
     }
+    .custom-option__arrow {
+        width: 100%;
+    }
     .credit select {
         width: 100%;
     }
@@ -980,8 +999,8 @@ input[type=range]::-webkit-slider-runnable-track {
         max-width: 275px;
     }
     .stages-union {
-        margin-right: 25px;
-        margin-left: 10px;
+        margin-right: 40px;
+        margin-left: 0px;
     }
     .info-item-blue::after {
         transform: rotate(-20deg);
@@ -1236,6 +1255,69 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 }
 
+@media(max-width: 767px) {
+    .stages-list {
+        flex-direction: column;
+        position: static;
+        left: 0px;
+    }
+    .stages-item,
+    .stages-union {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .stages-union {
+        transform: rotate(90deg);
+        height: 75px;
+    }
+    .stages-union img {
+        position: relative;
+        bottom: 92%;
+    }
+    .info-item-blue::after {
+        transform: scale(-1, 1) rotate(-45deg);
+        left: 40px;
+        top: 10px;
+        width: 100px;
+        height: 60px;
+    }
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .footer-info__text {
+        max-width: 576px;
+    }
+    .footer-contact .address {
+        max-width: none;
+    }
+    .footer h4, 
+    .footer .tel a,
+    .footer .email,
+    .footer .address,
+    .footer .socials {
+        text-align: center;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .copyright .col {
+        padding: 15px;
+    }
+    .copyright-links {
+        margin-top: 20px;
+    }
+}
+
 @media(max-width: 576px) {
     .header {
         padding-top: 5px;
@@ -1304,6 +1386,9 @@ input[type=range]::-webkit-slider-runnable-track {
     .credit .col-lg-7 h3 {
         margin-top: 20px;
     }
+    .custom-option__arrow {
+        width: 100%;
+    }
     .credit select {
         width: 100%;
     }
@@ -1331,26 +1416,8 @@ input[type=range]::-webkit-slider-runnable-track {
     .stages {
         margin-top: 40px;
     }
-    .stages-list {
-        flex-direction: column;
-        position: static;
-        left: 0px;
-    }
     .before-numbers::before {
         left: 13px;
-    }
-    .stages-item,
-    .stages-union {
-        margin: 0 auto;
-        text-align: center;
-    }
-    .stages-union {
-        transform: rotate(90deg);
-        height: 75px;
-    }
-    .stages-union img {
-        position: relative;
-        bottom: 92%;
     }
     .consult {
         text-align: center;
@@ -1366,46 +1433,29 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 80%;
     }
     .info-item-blue::after {
-        transform: scale(-1, 1) rotate(-45deg);
         left: 50px;
         top: 25px;
         width: 100px;
         height: 75px;
     }
-    .footer {
-        padding-top: 40px;
-        padding-bottom: 40px;
+
+}
+
+@media(max-width: 575px) {
+    .info-item-blue::after {
+        left: 50px;
+        top: 15px;
+        width: 100px;
+        height: 55px;
     }
-    .footer-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-list {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .footer-info__text {
-        max-width: 576px;
-    }
-    .footer-contact .address {
-        max-width: none;
-    }
-    .footer h4, 
-    .footer .tel a,
-    .footer .email,
-    .footer .address,
-    .footer .socials {
-        text-align: center;
-    }
-    .copyright {
-        text-align: center;
-    }
-    .copyright .col {
-        padding: 15px;
-    }
-    .copyright-links {
-        margin-top: 20px;
+}
+
+@media(max-width: 414px) {
+    .info-item-blue::after {
+        left: 40px;
+        top: 15px;
+        width: 100px;
+        height: 70px;
     }
 }
 
@@ -1417,15 +1467,15 @@ input[type=range]::-webkit-slider-runnable-track {
     .popup button {
         width: 300px;
     }
-}
-
-@media(max-width: 375px) {
-    .info-item-blue::after {
+    /* .info-item-blue::after {
         left: 45px;
         top: 32px;
         width: 100px;
         height: 85px;
-    }
+    } */
+}
+
+@media(max-width: 375px) { 
     .popup input,
     .popup button {
         width: 260px;
@@ -1433,6 +1483,10 @@ input[type=range]::-webkit-slider-runnable-track {
     .main-wrapper form h3 {
         font-size: 22px;
         line-height: 24px;
+    }
+    .info-item-blue::after {
+        top: 25px;
+        height: 80px;
     }
 }
 
