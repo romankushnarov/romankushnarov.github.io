@@ -1,0 +1,218 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.header {
+    background: #F25142;
+}
+
+
+
+
+
+/* ------------------- NAV ------------------ */
+
+
+
+
+
+.navbar {
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    background: #F25142;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+    padding: 5px 0;
+}
+.navbar-expand-xl .navbar-nav .call-me {
+    padding: 11px 20px;
+    background: #fff;
+    color: #555555;
+    margin: 0 25px;
+    border: 2px solid #fff;
+    transition: 0.2s all ease-out;
+}
+.navbar-expand-xl .navbar-nav .call-me:hover {
+    background: #F25142;
+    color: #fff;
+}
+.navbar-expand-xl .navbar-nav .nav-tel {
+    margin-left: 0;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    margin-left: 18px;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s all ease-out;
+}
+
+.nav-link:first-child {
+
+}
+
+.nav-link:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-tel {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../images/mob-menu.png");
+}
+
+
+
+
+/* ------------------- CONSULT ------------------ */
+
+.consult-bg {
+
+}
+
+.bg-1 {
+    background: url(../images/bg-1.jpg);
+}
+
+.bg-2 {
+    background: url(../images/bg-2.jpg);
+}
+
+.bg-3 {
+    background: url(../images/bg-3.jpg);
+}
+
+.bg-4 {
+    background: url(../images/bg-4.jpg);
+}
+
+.bg-5 {
+    background: url(../images/bg-5.jpg);
+}
+
+.consult h1 {
+    font-size: 37px;
+    line-height: 43px;
+}
+
+.consult .row {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.consult-wrapper h2 {
+    background: #F25142;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 30px;
+}
+
+.consult-wrapper form {
+    padding: 30px;
+    background: #fff;
+}
+
+.consult-wrapper form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555555;
+    margin-bottom: 23px;
+}
+
+.consult-wrapper form button {
+    width: 100%;
+    background: #F25142;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+}
+
+.consult h1 span {
+    color: #F25142;
+}
+
+
+
+
+/* ------------------- ADAPTIVE ------------------ */
+
+
+@media(max-width: 1200px) {
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .navbar-brand {
+        margin-left: 5%;
+    }
+    .navbar-toggler {
+        margin-right: 5%;
+    }
+}
