@@ -90,6 +90,55 @@ $(document).ready(function(){
         }
     });
 
+    // открыть по кнопке
+    $('.js-main__btn').click(function() { 
+        
+        $('.js-overlay').fadeIn();
+        $('.js-overlay').addClass('disabled');
+    });
+
+    // закрыть на крестик
+    $('.js-close-popup').click(function() { 
+        $('.js-overlay').fadeOut();
+        
+    });
+
+    // закрыть по клику вне окна
+    $(document).mouseup(function (e) { 
+        var popup = $('.js-popup');
+        if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+            $('.js-overlay').fadeOut();
+            
+        }
+    });
+
+
+    // открыть по кнопке
+    $('.js-main__btn-form').click(function() { 
+    
+        $('.js-overlay-form').fadeIn();
+        $('.js-overlay-form').addClass('disabled');
+    });
+
+    // закрыть на крестик
+    $('.js-close-popup-form').click(function() { 
+        $('.js-overlay-form').fadeOut();
+        
+    });
+
+    // закрыть по клику вне окна
+    $(document).mouseup(function (e) { 
+        var popup = $('.js-popup-form');
+        if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+            $('.js-overlay-form').fadeOut();
+            
+        }
+    });
+
+
+
+
+    
     $('.lightzoom').lightzoom({speed: 400, viewTitle: true});
 
 

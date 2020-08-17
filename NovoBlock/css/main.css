@@ -42,6 +42,128 @@ h2 {
     background: #F25142;
 }
 
+/* ------------------- POPUP ------------------- */
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 201;
+    /* display: none; */
+}
+
+
+
+.popup {
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    background: #FBFBFB;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.popup i {
+    color: #fff;
+}
+
+.close-popup {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.overlay-form {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 201;
+    /* display: none; */
+}
+
+.popup-form {
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    background: #FBFBFB;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.popup-form i {
+    color: #fff;
+}
+
+.close-popup-form {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-form h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.popup-form input {
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.popup-form button  {
+    margin-top: 10px;
+    width: 100%;
+    background: #F25142;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    border: 3px solid transparent;
+    transition: 0.2s all ease-out;
+}
+
+.popup-form button :hover {
+    border: 3px solid #F25142;
+    background: transparent;
+    color: #F25142;
+}
+
+
 
 /* ------------------- OWL DOTS ------------------ */
 
@@ -1167,6 +1289,9 @@ h2 {
         top: 40%;
         width: 380px;
     }
+    .price {
+        padding-bottom: 0px;
+    }
     .about-video {
         margin-top: 0;   
     }
@@ -1243,6 +1368,10 @@ h2 {
     }
     .row {
         margin: 0;
+    }
+    .price-text {
+        padding-right: 15px;
+        padding-left: 15px;
     }
     .price h2 {
         margin-top: 40px;
@@ -1361,6 +1490,17 @@ h2 {
     .consult-wrapper h2 {
         font-size: 16px;
         line-height: 22px;
+    }
+    .popup, .popup-form {
+        width: 70%;
+        line-height: 20px;
+        text-align: center;
+    }
+    .popup-form input {
+        padding: 10px;
+    }
+    .popup-form input::placeholder {
+        font-size: 14px;
     }
 }
 

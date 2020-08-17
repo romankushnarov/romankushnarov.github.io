@@ -58,7 +58,7 @@
                       <a class="nav-link" href="#">КОНТАКТЫ</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link call-me" href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                      <a class="nav-link call-me js-main__btn-form" href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link nav-tel" href="tel:+74950000055">+7 495 000-00-55</a>
@@ -68,6 +68,27 @@
               </nav>
         </div>
     </header>
+
+    <div class="overlay js-overlay">
+      <div class="popup js-popup">
+          <form action="#" class="d-flex flex-column">
+              <div class="close-popup js-close-popup"><i class="fas fa-times"></i></div>
+              <h3>Ваша заявка на консультацию была отправлена!</h3>
+          </form>
+      </div>
+    </div>
+
+    <div class="overlay-form js-overlay-form">
+      <div class="popup-form js-popup-form">
+          <form action="#" class="d-flex flex-column">
+              <div class="close-popup-form js-close-popup-form"><i class="fas fa-times"></i></div>
+                  <h3>Введите ваши данные:</h3>
+                  <input type="text" placeholder="Введите ваше имя">
+                  <input type="text" placeholder="Введите ваш номер телефона">
+                  <button>Перезвоните мне</button>
+          </form>
+      </div>
+    </div>
 
     <section class="consult">
             <div class="owl-carousel1 owl-carousel">
@@ -121,7 +142,7 @@
                 <h2>ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</h2>
                 <form action="#">
                     <input type="text" placeholder="Телефон">
-                    <button>Перезвоните мне</button>
+                    <button class="js-main__btn">Перезвоните мне</button>
                 </form>
             </div>
     </section>
@@ -434,7 +455,7 @@
           <div class="col-lg-5 offer-wrapper__text">
             <h1 class="text-uppercase">ВЫБЕРИТЕ СВОЁ СПЕЦПРЕДЛОЖЕНИЕ!</h1>
             <h2>Краткое описание предложения в нескольких простых словах.</h2>
-            <button class="sale-btn text-uppercase">ОСТАВИТЬ ЗАЯВКУ</button>
+            <button class="sale-btn text-uppercase js-main__btn-form">ОСТАВИТЬ ЗАЯВКУ</button>
           </div>
           <div class="col-lg-7 offer-wrapper__carousel">
             <div class="owl-carousel2 owl-carousel">
@@ -668,7 +689,7 @@
           </div>
           <div class="col-md-4 d-flex flex-column align-items-center">
             <a href="tel+74950000000">+7 495 000-00-00</a>
-            <button class="text-uppercase">ПЕРЕЗВОНИТЕ МНЕ</button>
+            <button class="text-uppercase js-main__btn-form">ПЕРЕЗВОНИТЕ МНЕ</button>
           </div>
         </div>
       </div>
@@ -798,7 +819,7 @@
             <h2>ОСТАЛИСЬ ВОПРОСЫ? ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</h2>
             <form action="#">
                 <input type="text" placeholder="Телефон">
-                <button>Перезвоните мне</button>
+                <button class="js-main__btn">Перезвоните мне</button>
             </form>
           </div>
         </div>
