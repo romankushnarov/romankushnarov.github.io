@@ -1511,6 +1511,12 @@ h2 {
 }
 
 @media(max-width: 375px) {
+    .consult-bg {
+        height: 725px;
+    }
+    .consult-wrapper {
+        top: 44%;
+    }
     .consult .row {
         padding-top: 80px;
     }
@@ -1520,6 +1526,9 @@ h2 {
 }
 
 @media(max-width: 360px) {
+    .consult-bg {
+        height: 580px;
+    }
     .consult .row {
         padding-top: 50px;
     }
@@ -1541,6 +1550,13 @@ h2 {
 }
 
 @media(max-width: 320px) {
+    .consult-bg {
+        height: 500px;
+    }
+    .consult h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
     .consult .row {
         padding-top: 40px;
     }
