@@ -1274,7 +1274,7 @@ h2 {
 
 @media(max-width: 767px) {
     .consult-bg {
-        height: 89vh;
+        height: 700px;
         background-position:  center;
         background-repeat: no-repeat;
         background-size: cover;
