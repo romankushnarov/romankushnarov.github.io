@@ -1438,6 +1438,10 @@ h2 {
     .portfolio {
         padding: 40px 15px;
     }
+    .reviews {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .owl-carousel4 {
         padding: 0 5%;
     }
@@ -1487,6 +1491,10 @@ h2 {
     }
     .faq-consult-wrapper {
         width: 100%;
+    }
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .consult-wrapper h2 {
         font-size: 16px;

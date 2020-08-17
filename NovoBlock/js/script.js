@@ -44,26 +44,36 @@ $(document).ready(function(){
                 items: 5,
                 nav: true,
                 dots: false,
+                mouseDrag: false,
+                touchDrag: false
             },
             1400: {
                 items: 4,
                 nav: true,
                 dots: false,
+                mouseDrag: false,
+                touchDrag: false
             },
             1200 : {
                 items: 3,
                 nav: true,
                 dots: false,
+                mouseDrag: false,
+                touchDrag: false
             },
             768 : {
                 items: 2,
                 nav: true,
                 dots: false,
+                mouseDrag: true,
+                touchDrag: true
             },
             0 : {
                 items: 1, 
                 nav: false,
                 dots: true,
+                mouseDrag: true,
+                touchDrag: true
             }
         }
     });
