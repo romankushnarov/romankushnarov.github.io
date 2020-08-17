@@ -440,10 +440,6 @@ h2 {
     margin-bottom: 23px;
 }
 
-.consult-wrapper form input:focus .consult-bg {
-    height: 89vh;
-}
-
 .consult-wrapper form button {
     width: 100%;
     background: #F25142;
