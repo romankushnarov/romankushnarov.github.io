@@ -32,13 +32,12 @@
 		table td {
 			border-collapse: collapse;
 		}
-    
+        
 		table {
 			border-collapse: collapse;
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
-
         .header-title {
             font-weight: 300;
             font-size: 36px;
@@ -46,7 +45,10 @@
             text-align: center;
             color: #222222;
         }
-
+        .items-wrapper img {
+            width: 150px;
+            height: 85px;
+        }
         .item-title{
             font-weight: bold;
             font-size: 16px;
@@ -97,6 +99,20 @@
             text-align: center;
             color: #999999;
         }
+        @media(max-width: 620px) {
+            .table-600 {
+                width: 90% !important;
+            }
+            .table-599 {
+                width: 100% !important;
+            }
+            .table-550 {
+                width: auto !important;
+            }
+            .items-wrapper {
+            display: block !important;
+            }
+        }
 	</style>
 </head>
 
@@ -105,7 +121,7 @@
 	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#F6F6F6">
 		<tr>
             <td>
-                <table cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" align="center">
+                <table cellpadding="0" cellspacing="0" class='table-600' width="600" bgcolor="#ffffff" align="center">
                     <tr>
                         <td height="30" bgcolor="#f6f6f6"></td>
                     </tr>
@@ -121,17 +137,17 @@
                         <td height="20" bgcolor="#ffffff"></td>
                     </tr>
                     <tr>
-                        <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';" class="header-title">Summer Sale</td>
+                        <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';" class="header-title">Летняя распродажа!</td>
                     </tr>
                     <tr>
-                        <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';" class="header-title">Up To 80% Off!!!</td>
+                        <td align="center" style="font-family: Arial, Helvetica, sans-serif, 'Roboto';" class="header-title">Скидки до 80 процентов!</td>
                     </tr>
                     <tr>
                         <td height="20" bgcolor="#ffffff"></td>
                     </tr>
                     <tr>
                         <td align="center">
-                            <img src="https://romankushnarov.github.io/EmailSale/images/general.png" alt="Awesome Red Nike Shoes">
+                            <img src="https://romankushnarov.github.io/EmailSale/images/general.png" alt="Nike Air Huarache">
                         </td>
                     </tr>
                     <tr>
@@ -139,17 +155,17 @@
                     </tr>
                     <tr>
                         <td class="item-title" align="center">
-                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Awesome Red Nike Shoes</h4>
+                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Nike Air Huarache</h4>
                         </td>
                     </tr>
                     <tr>
                         <td class="item-text" align="center">
-                            <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Yesterday all my troubles seemed so far away.</p>
+                            <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Обувь, призванная обеспечивать комфорт.</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="item-price" align="center">
-                            <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$199</p>
+                            <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">4500 RUB</p>
                         </td>
                     </tr>
                     <tr>
@@ -158,12 +174,12 @@
                     <tr>
                         <td class="item-button__wrapper" align="center">
                             <div><!--[if mso]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:220px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                   <w:anchorlock/>
                                   <center>
                                 <![endif]-->
                                     <a href="http://google.com"
-                              style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">More info</a>
+                              style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;">Больше информации</a>
                                 <!--[if mso]>
                                   </center>
                                 </v:roundrect>
@@ -175,21 +191,21 @@
                     </tr>
                     <tr>
                         <td class="deals-title" align="center">
-                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Amazing deals for all</h4>
+                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Невероятные предложения для всех</h4>
                         </td>
                     </tr>
                     <tr>
-                        <td height="10" bgcolor="#ffffff"></td>
+                        <td height="20" bgcolor="#ffffff"></td>
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellspacing="0" width="550" bgcolor="#ffffff" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-550" width="550" bgcolor="#ffffff" align="center">
                                 <tr>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="left">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/amazing-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/amazing-item.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -199,12 +215,12 @@
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Now it looks as though they're here to stay.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Лаконичная классическая модель.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$199</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">8999 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -213,12 +229,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -230,26 +246,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="center">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/amazing-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/dr-martens.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Air Jordan</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Dr. Martens</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Now it looks as though they're here to stay.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Знаковая модель с богатой историей.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$199</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">6999 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -258,12 +274,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -275,26 +291,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="right">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/amazing-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/monarch.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Air Jordan</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Nike</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Now it looks as though they're here to stay.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Кроссовки с верхом из прочной кожи.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$199</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">11999 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -303,12 +319,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -329,36 +345,36 @@
                     </tr>
                     <tr>
                         <td class="deals-title" align="center">
-                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Just for her</h4>
+                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Только для неё</h4>
                         </td>
                     </tr>
                     <tr>
-                        <td height="10" bgcolor="#ffffff"></td>
+                        <td height="20" bgcolor="#ffffff"></td>
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellspacing="0" width="550" bgcolor="#ffffff" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-550" width="550" bgcolor="#ffffff" align="center">
                                 <tr>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="left">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/her-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/woman1.jpeg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for her</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Estro</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Замшевые туфли бордового цвета. </p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$22</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">3999 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -367,12 +383,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -384,26 +400,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="center">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/her-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/woman2.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for her</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Fila</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Комфортная обувь для прогулок.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$89</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">4399 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -412,12 +428,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -429,26 +445,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="right">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/her-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/woman3.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for her</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Keen Kaci</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Туфли для теплых летних вечеров.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$35</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">3299 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -457,12 +473,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -483,36 +499,36 @@
                     </tr>
                     <tr>
                         <td class="deals-title" align="center">
-                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Just for him</h4>
+                            <h4 style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-weight: 400;">Только для него</h4>
                         </td>
                     </tr>
                     <tr>
-                        <td height="10" bgcolor="#ffffff"></td>
+                        <td height="20" bgcolor="#ffffff"></td>
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellspacing="0" width="550" bgcolor="#ffffff" align="center">
+                            <table cellpadding="0" cellspacing="0" class="table-550" width="550" bgcolor="#ffffff" align="center">
                                 <tr>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="left">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/him-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/man1.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for him</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Puma</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Легендарная модель компании Puma.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$45</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">5899 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -521,12 +537,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -538,26 +554,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="center">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/him-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/man2.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for him</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Adidas</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Комфортная обувь на каждый день.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$60</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">7199 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -566,12 +582,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -583,26 +599,26 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td> 
+                                    <td class='items-wrapper'> 
                                         <table cellpadding="0" cellspacing="0" width="150" bgcolor="#ffffff" align="right">
                                             <tr>
                                                 <td>
-                                                    <img src="https://romankushnarov.github.io/EmailSale/images/him-item.png" alt="Amazing item">
+                                                    <img src="https://romankushnarov.github.io/EmailSale/images/man3.jpg" alt="Amazing item">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-title" align="center">
-                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Shoes for him</h4>
+                                                    <h4 style="margin: 0;  margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Nike</h4>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" class="item-text">
-                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">There's a shadow hanging over me.</p>
+                                                    <p style="margin: 0; margin-top: 8px; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Футуристичные кроссовки.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="item-price" align="center">
-                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">$99</p>
+                                                    <p style="margin: 0; padding: 0; margin-top: 10px; font-family: Arial, Helvetica, sans-serif, 'Roboto';">5999 RUB</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -611,12 +627,12 @@
                                             <tr>
                                                 <td class="item-button__wrapper" align="center">
                                                     <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:120px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://google.com" style="height:43px;v-text-anchor:middle;width:140px;" arcsize="10%" stroke="f" fillcolor="#3498DB">
                                                           <w:anchorlock/>
                                                           <center>
                                                         <![endif]-->
                                                             <a href="http://google.com"
-                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;">Buy Now</a>
+                                                      style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:140px;-webkit-text-size-adjust:none;">Купить сейчас</a>
                                                         <!--[if mso]>
                                                           </center>
                                                         </v:roundrect>
@@ -637,7 +653,7 @@
                     </tr>
                     <tr>
                         <td class="note-td">
-                            <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Oh, I believe in yesterday. Mm mm mm mm mm.</p>
+                            <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Скидки продлятся до 31 августа!</p>
                         </td>
                     </tr>
                     <tr>
@@ -651,7 +667,7 @@
                                   <center>
                                 <![endif]-->
                                     <a href="http://google.com"
-                              style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:160px;-webkit-text-size-adjust:none;">Show All Shoes</a>
+                              style="background-color:#3498DB;font-family: Arial, Helvetica, sans-serif, 'Roboto';border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:300;line-height:43px;text-align:center;text-decoration:none;width:160px;-webkit-text-size-adjust:none;">Показать больше</a>
                                 <!--[if mso]>
                                   </center>
                                 </v:roundrect>
@@ -666,7 +682,7 @@
                     </tr>
                     <tr>
                         <td class="footer-text-td" align="center" bgcolor="#F6F6F6">
-                            <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Company Inc, 3 Abbey Road, San Francisco CA 94102 <br> Don't like these emails? Unsubscribe.</p>
+                            <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, 'Roboto';">Москва, ул. Большая Лубянка, д. 11<br> Хотите отписаться от рассылки? <a style="color: #999999" href="https://google.com">Отпишитесь.</a></p>
                         </td>
                     </tr>
                     <tr>
@@ -677,19 +693,19 @@
                             <table cellpadding="0" cellspacing="0" width="280">
                                 <tr>
                                     <td>
-                                        <img src="https://romankushnarov.github.io/EmailSale/images/twitter.png" alt="Мы в Twitter">
+                                        <a href="https://google.com"><img src="https://romankushnarov.github.io/EmailSale/images/twitter.png" alt="Мы в Twitter"></a>
                                     </td>
                                     <td>
-                                        <img src="https://romankushnarov.github.io/EmailSale/images/facebook.png" alt="Мы в Twitter">
+                                        <a href="https://google.com"><img src="https://romankushnarov.github.io/EmailSale/images/facebook.png" alt="Мы в Twitter"></a>
                                     </td>
                                     <td>
-                                        <img src="https://romankushnarov.github.io/EmailSale/images/pinterest.png" alt="Мы в Twitter">
+                                        <a href="https://google.com"><img src="https://romankushnarov.github.io/EmailSale/images/pinterest.png" alt="Мы в Twitter"></a>
                                     </td>
                                     <td>
-                                        <img src="https://romankushnarov.github.io/EmailSale/images/instagram.png" alt="Мы в Twitter">
+                                        <a href="https://google.com"><img src="https://romankushnarov.github.io/EmailSale/images/instagram.png" alt="Мы в Twitter"></a>
                                     </td>
                                     <td>
-                                        <img src="https://romankushnarov.github.io/EmailSale/images/linkedin.png" alt="Мы в Twitter">
+                                        <a href="https://google.com"><img src="https://romankushnarov.github.io/EmailSale/images/linkedin.png" alt="Мы в Twitter"></a>
                                     </td>
                                 </tr>
                             </table>
@@ -700,7 +716,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellspacing="0" width="600" bgcolor="#f6f6f6" align="center">
+                            <table cellpadding="0" cellspacing="0" class='table-599' width="599" bgcolor="#f6f6f6" align="center">
                                 <tr>
                                     <td align="right">
                                         <img  style="margin-right: 5px" src="https://romankushnarov.github.io/EmailSale/images/apple.png" alt="App Store">
