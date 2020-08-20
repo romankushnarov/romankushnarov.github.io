@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избиение Артёма</title>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- OWN STYLES -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <section class="main">
+        <h1 class="general-title">Рассчитай стоимость избиения Артёма!</h1>
+        <div class="main-wrapper">
+            <div class="main-wrapper__left">
+                <label for="hit-count" class="input-label">Количество ударов
+                    <input type="text" id="hit-count" value="0">
+                    <input class="input-range" type="range" name="hit-count-range" min="0" max="100" value="0" id="hit-count-range">
+                </label>
+                <label for="hit-degree" class="input-label">Угол замаха при ударе
+                    <input type="text" id="hit-degree" value="0">
+                    <input class="input-range" type="range" name="hit-degree-range" min="0" max="90" id="hit-degree-range" value="0">
+                </label>
+                <div class="hit-type">
+                    <h2 class="hit-type__title">Выберите вид удара:</h2>
+                    <div class="hit-type__list">
+                        <button data-name="pinok" class="hit-type__btn btn-active">Пинок под зад</button>
+                        <button data-name="bita" class="hit-type__btn">Удар битой</button>
+                        <button data-name="morgen" class="hit-type__btn">Удар моргенштерном</button>
+                        <button data-name="knife" class="hit-type__btn">Пырнуть ножом</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrapper__right">
+                <div class="additionally">
+                    <h2 class="additionally-title">Дополнительные услуги:</h2>
+                    <div class="additionally-list">
+                        <div class="additionally-item">
+                            <input type="checkbox" class="input-checkbox" data-name="mangal" id="mangal" name="mangal" checked>
+                            <label for="mangal">Сделать из Артёма мангал</label>
+                        </div>
+                        <div class="additionally-item">
+                            <input type="checkbox" class="input-checkbox" data-name="salo" id="salo" name="salo">
+                            <label for="salo">Отрезать кусочку жира с тушки</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <h3 id="price-title">Итоговая стоимость:</h3>
+                    <h2 id="price-text">0 ₽</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
