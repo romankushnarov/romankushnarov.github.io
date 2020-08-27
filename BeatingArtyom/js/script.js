@@ -71,19 +71,20 @@ for(let item of hitTypeBtn) {
     })
 }
 
+const takeActiveBtn = currentActive => {
+    const dataAttrValue = currentActive.dataset.name;
+    const currentWeapon = weapons.find(weapon => weapon.name === dataAttrValue);
+    currentPercent = currentWeapon.percents;
+    console.log(currentPercent);
+    calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
+}
+
 // Изменение в инпутах
 
 for (let input of inputRange) {
     input.addEventListener('input', () => {
         assignValue();
-        // console.log(input.value);
-        let degreePrice = hitDegreeRange.value * hitDegreeRangePrice;
-        let hitPrice = degreePrice + hitCountRangePrice;
-        let inputPrice = hitCountRange.value * hitPrice;
-        // console.log(countPrice);
-        // console.log(degreePrice);
-        console.log(inputPrice);
-        calculation(hitCount.value, hitDegree.value, inputPrice);
+        calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
     })
 }
 
@@ -118,20 +119,23 @@ for (let input of inputRange) {
 
 
 
-const calculation = (hitCount = 0, hitDegree = 0, inputPrice = 0, checkBoxPrice = 0) => {
+const calculation = (hitDegreeRange = 0, hitDegreeRangePrice, hitCountRangePrice, hitCountRange = 0, currentPercent = 1) => {
+    let degreePrice = hitDegreeRange * hitDegreeRangePrice;
+    let hitPrice = degreePrice + hitCountRangePrice;
+    let inputPrice = hitCountRange * hitPrice;
     let interestRate = currentPercent; // Множитель бабла
-    let totalPrice = inputPrice * interestRate
-    inputCheckbox.addEventListener('input', () => {
-        if(mangal.checked && salo.checked) {
-            return totalPrice = totalPrice + 1250;
-        } else if (mangal.checked) {
-            return totalPrice = totalPrice + 500;
-        } else if (salo.cheked) {
-            return totalPrice = totalPrice + 750;
-        } else {
-            return totalPrice = totalPrice
-        }
-    })
+    let totalPrice = inputPrice * interestRate;
+    // inputCheckbox.addEventListener('input', () => {
+    //     if(mangal.checked && salo.checked) {
+    //         return totalPrice = totalPrice + 1250;
+    //     } else if (mangal.checked) {
+    //         return totalPrice = totalPrice + 500;
+    //     } else if (salo.cheked) {
+    //         return totalPrice = totalPrice + 750;
+    //     } else {
+    //         return totalPrice = totalPrice
+    //     }
+    // })
 
     console.log(totalPrice); 
 }
