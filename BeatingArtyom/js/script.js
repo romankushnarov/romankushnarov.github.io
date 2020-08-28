@@ -59,7 +59,19 @@ const weapons = [
     }
 ]
 
+const options = [
+    {
+        name: 'mangal',
+        price: 750,
+    },
+    {
+        name: 'salo',
+        percents: 500,
+    },
+]
+
 let currentPercent = weapons[0].percents;
+let Options = options[0].percents;
 
 for(let item of hitTypeBtn) {
     item.addEventListener('click', () => {
@@ -76,66 +88,60 @@ const takeActiveBtn = currentActive => {
     const currentWeapon = weapons.find(weapon => weapon.name === dataAttrValue);
     currentPercent = currentWeapon.percents;
     console.log(currentPercent);
-    calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
+    calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent, currentPrice);
 }
+
+
+
+
+
+
+
+for(let item of inputCheckbox) {
+    item.addEventListener('click', () => {
+        for(let item of inputCheckbox) {
+            item.classList.remove('btn-active');
+        }
+        item.classList.add('btn-active');
+        takeActiveOption(item);
+    })
+}
+
+const takeActiveOption = currentActive => {
+    const dataAttrValue = currentActive.dataset.price;
+    const currentOption = options.find(option => option.name === dataAttrValue);
+    currentPrice = currentOption.price;
+    console.log(currentPrice);
+    calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent, currentPrice);
+}
+
+
+ 
+
+
+
+
+
 
 // Изменение в инпутах
 
 for (let input of inputRange) {
     input.addEventListener('input', () => {
         assignValue();
-        calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
+        calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent, currentPrice);
     })
 }
 
-
-
-
-
 // Изменения в чекбоксах
 
-// for (let checkbox of inputCheckbox) {
-//     checkbox.addEventListener('change', () => {
-//         assignValue();
-//         let mangalPrice;
-//         let saloPrice;
-//         if(mangal.checked) {
-//             mangalPrice = 750;
-//         } else {
-//             mangalPrice = 0;
-//         }
-//         if(salo.checked) {
-//             saloPrice = 500;
-//         } else {
-//             saloPrice = 0;
-//         }
-//         let checkBoxPrice = saloPrice + mangalPrice;
-//         console.log(checkBoxPrice);
-//         calculation(checkBoxPrice);
-//     })
-// }
 
 
-
-
-
-const calculation = (hitDegreeRange = 0, hitDegreeRangePrice, hitCountRangePrice, hitCountRange = 0, currentPercent = 1) => {
+const calculation = (hitDegreeRange = 0, hitDegreeRangePrice, hitCountRangePrice, hitCountRange = 0, currentPercent = 1, currentPrice) => {
     let degreePrice = hitDegreeRange * hitDegreeRangePrice;
     let hitPrice = degreePrice + hitCountRangePrice;
     let inputPrice = hitCountRange * hitPrice;
     let interestRate = currentPercent; // Множитель бабла
-    let totalPrice = inputPrice * interestRate;
-    // inputCheckbox.addEventListener('input', () => {
-    //     if(mangal.checked && salo.checked) {
-    //         return totalPrice = totalPrice + 1250;
-    //     } else if (mangal.checked) {
-    //         return totalPrice = totalPrice + 500;
-    //     } else if (salo.cheked) {
-    //         return totalPrice = totalPrice + 750;
-    //     } else {
-    //         return totalPrice = totalPrice
-    //     }
-    // })
+    let totalPrice = inputPrice * interestRate + currentPrice;
 
     console.log(totalPrice); 
 }
