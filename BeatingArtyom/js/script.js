@@ -126,6 +126,29 @@ for (let input of inputRange) {
 
 // Изменения в чекбоксах
 
+// for (let checkbox of inputCheckbox) {
+//     checkbox.addEventListener('change', () => {
+//         assignValue();
+//         let mangalPrice;
+//         let saloPrice;
+//         if(mangal.checked) {
+//             mangalPrice = 750;
+//         } else {
+//             mangalPrice = 0;
+//         }
+//         if(salo.checked) {
+//             saloPrice = 500;
+//         } else {
+//             saloPrice = 0;
+//         }
+//         let checkBoxPrice = saloPrice + mangalPrice;
+//         console.log(checkBoxPrice);
+//         calculation(checkBoxPrice);
+//     })
+// }
+
+
+
 
 
 const calculation = (hitCount = 0, hitDegree = 0, inputPrice = 0, checkBoxPrice = 0) => {
