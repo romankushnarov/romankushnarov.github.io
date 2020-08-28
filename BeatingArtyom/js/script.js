@@ -155,15 +155,15 @@ const calculation = (hitCount = 0, hitDegree = 0, inputPrice = 0, checkBoxPrice 
     let interestRate = currentPercent; // Множитель бабла
     let totalPrice = inputPrice * interestRate
     inputCheckbox.addEventListener('input', () => {
-        if(mangal.checked && salo.checked) {
-            return totalPrice = totalPrice + 1250;
-        } else if (mangal.checked) {
-            return totalPrice = totalPrice + 500;
-        } else if (salo.cheked) {
-            return totalPrice = totalPrice + 750;
-        } else {
-            return totalPrice = totalPrice
-        }
+        // if(mangal.checked && salo.checked) {
+        //     return totalPrice = totalPrice + 1250;
+        // } else if (mangal.checked) {
+        //     return totalPrice = totalPrice + 500;
+        // } else if (salo.cheked) {
+        //     return totalPrice = totalPrice + 750;
+        // } else {
+        //     return totalPrice = totalPrice
+        // }
     })
 
     console.log(totalPrice); 
