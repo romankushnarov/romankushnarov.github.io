@@ -164,3 +164,53 @@ input:in-range {
     font-size: 26px;
     line-height: 30px;
 }
+
+.artyom-img {
+    max-width: 50%;
+    margin: 70px auto 0;    
+}
+
+@media(max-width: 768px) {
+    .main {
+        padding: 20px;
+        text-align: center;
+    }
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .main-wrapper__left {
+        padding-bottom: 0;
+    }
+    .input-label {
+        max-width: 100%;
+    }
+    .hit-type__list {
+        max-width: 100%;
+    }
+    .main-wrapper__left {
+        width: 100%;
+        border-right: none;
+    }
+    .main-wrapper__right {
+        width: 100%;
+    }
+    .additionally-title {
+        padding-left: 0;
+    }
+    .additionally-list {
+        margin-left: 0;
+    }
+    .hit-type {
+        margin-top: 40px;
+    }
+    .hit-type__list {
+        margin: 20px auto;
+    }
+    .price {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .artyom-img {
+        max-width: 80%;
+    }
+}
