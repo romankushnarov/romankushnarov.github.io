@@ -35,21 +35,21 @@
         <h1 class="general-title">Рассчитай стоимость избиения Артёма!</h1>
         <div class="main-wrapper">
             <div class="main-wrapper__left">
-                <label for="hit-count" class="input-label">Количество ударов
+                <label for="hit-count" class="input-label">Количество ударов (1 удар - 20 руб)
                     <input type="text" id="hit-count" value="0">
                     <input class="input-range" type="range" name="hit-count-range" min="0" max="100" value="0" id="hit-count-range">
                 </label>
-                <label for="hit-degree" class="input-label">Угол замаха при ударе
+                <label for="hit-degree" class="input-label">Угол замаха при ударе (1&#176; - 3 руб)
                     <input type="text" id="hit-degree" value="0">
                     <input class="input-range" type="range" name="hit-degree-range" min="0" max="90" id="hit-degree-range" value="0">
                 </label>
                 <div class="hit-type">
                     <h2 class="hit-type__title">Выберите вид удара:</h2>
                     <div class="hit-type__list">
-                        <button data-name="pinok" class="hit-type__btn btn-active">Пинок под зад</button>
-                        <button data-name="bita" class="hit-type__btn">Удар битой</button>
-                        <button data-name="morgen" class="hit-type__btn">Удар моргенштерном</button>
-                        <button data-name="knife" class="hit-type__btn">Пырнуть ножом</button>
+                        <button data-name="pinok" class="hit-type__btn btn-active">Пинок под зад (x1)</button>
+                        <button data-name="bita" class="hit-type__btn">Удар битой (x1.2)</button>
+                        <button data-name="morgen" class="hit-type__btn">Удар моргенштерном (x1.5)</button>
+                        <button data-name="knife" class="hit-type__btn">Пырнуть ножом (x2)</button>
                     </div>
                 </div>
             </div>
@@ -59,11 +59,11 @@
                     <div class="additionally-list">
                         <div class="additionally-item">
                             <input type="checkbox" class="input-checkbox" data-price="750" id="mangal" name="mangal">
-                            <label for="mangal">Сделать из Артёма мангал</label>
+                            <label for="mangal">Сделать из Артёма мангал (750р)</label>
                         </div>
                         <div class="additionally-item">
                             <input type="checkbox" class="input-checkbox" data-price="500" id="salo" name="salo">
-                            <label for="salo">Отрезать кусочку жира с тушки</label>
+                            <label for="salo">Отрезать кусочку жира с тушки (500р)</label>
                         </div>
                     </div>
                 </div>
