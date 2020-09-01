@@ -36,11 +36,11 @@
         <div class="main-wrapper">
             <div class="main-wrapper__left">
                 <label for="hit-count" class="input-label">Количество ударов (1 удар - 20 руб)
-                    <input type="text" id="hit-count" value="0">
+                    <input class="input-text" type="text" id="hit-count" value="0" min="0" max="100">
                     <input class="input-range" type="range" name="hit-count-range" min="0" max="100" value="0" id="hit-count-range">
                 </label>
                 <label for="hit-degree" class="input-label">Угол замаха при ударе (1&#176; - 3 руб)
-                    <input type="text" id="hit-degree" value="0">
+                    <input class="input-text" type="text" id="hit-degree" value="0" min="0" max="90">
                     <input class="input-range" type="range" name="hit-degree-range" min="0" max="90" id="hit-degree-range" value="0">
                 </label>
                 <div class="hit-type">

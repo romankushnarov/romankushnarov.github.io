@@ -16,6 +16,10 @@ const hitCountRange = document.getElementById('hit-count-range');
 
 const priceText = document.getElementById('price-text');
 
+// Все инпуты
+
+const inputText = document.querySelectorAll('.input-text');
+
 // Все range
 
 const inputRange = document.querySelectorAll('.input-range');
@@ -41,7 +45,13 @@ const assignValue = () => {
     hitDegree.value = hitDegreeRange.value;
 }
 
+const assignValue2 = () => {
+    hitCountRange.value = hitCount.value;
+    hitDegreeRange.value = hitDegree.value;
+}
+
 assignValue();
+assignValue2();
 
 const weapons = [
     {
@@ -66,6 +76,8 @@ let currentPercent = weapons[0].percents;
 
 for(let item of hitTypeBtn) {
     item.addEventListener('click', () => {
+        assignValue();
+        assignValue2();
         for(let item of hitTypeBtn) {
             item.classList.remove('btn-active');
         }
@@ -82,7 +94,7 @@ const takeActiveBtn = currentActive => {
     calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
 }
 
-// Изменение в инпутах
+// Изменение в range 
 
 for (let input of inputRange) {
     input.addEventListener('input', () => {
@@ -91,7 +103,16 @@ for (let input of inputRange) {
     })
 }
 
+// Изменения в инпутах
 
+
+
+for (let input of inputText) {
+    input.oninput = () => {
+        assignValue2();
+        calculation(hitDegreeRange.value, hitDegreeRangePrice, hitCountRangePrice, hitCountRange.value, currentPercent);
+    }
+}
 
 // Изменения в чекбоксах
 
