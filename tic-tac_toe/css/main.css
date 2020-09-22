@@ -44,8 +44,8 @@ html {
 
 }
 
-.player-score__count {
-
+.refresh i {
+    font-size: 24px;
 }
 
 .overlay {
@@ -141,17 +141,20 @@ html {
         margin-top: 15vh;
     }
     .players {
-        max-width: 75vw;
+        max-width: 85vw;
         font-size: 22px;
     }
     .container {
-        max-width: 75vw;
-        margin-top: 15vh;
+        max-width: 85vw;
+        margin-top: 12vh;
     }
     .col {
-        height: 100px;
+        height: 110px;
     }
     .fas, .far {
         font-size: 50px;
+    }
+    .refresh i {
+        font-size: 20px;
     }
 }
