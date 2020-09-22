@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    
+    // scre count
+    let player1 = $('#player-1')
+    let player2 = $('#player-2')
 
     // fields
     let col = $('.col'); 
@@ -51,30 +55,45 @@ $(document).ready(function() {
                 moveCounter++;
             }
         }
-        if((checkWinCross() || checkWinCircle()) || moveCounter == 9) {
+        if(checkWinCross()) {
+            let counter1 = +player1.html();
+            counter1 += 1;
+            console.log(counter1);
+            player1.html(counter1);
             $('.overlay').css('display', 'block');
-            setTimeout(stopGame, 1000);         
+            setTimeout(stopGame, 1000);     
         } 
-        
+        if(checkWinCircle()) {
+            let counter2 = +player2.html();
+            counter2 += 1;
+            console.log(counter2);
+            player2.html(counter2);
+            $('.overlay').css('display', 'block');
+            setTimeout(stopGame, 1000);     
+        }
+        if(moveCounter == 9) {
+            $('.overlay').css('display', 'block');
+            setTimeout(stopGame, 1000);    
+        }
     })
 
     function checkWinCross() {
         if((col1.html() == cross) && (col2.html() == cross) && (col3.html() == cross)) {
-            green(col1, col2, col3); return true;
+            green(col1, col2, col3); return true; 
         } else if((col4.html() == cross) && (col5.html() == cross) && (col6.html() == cross)) {
-            green(col4, col5, col6); return true;
+            green(col4, col5, col6); return true; 
         } else if((col7.html() == cross) && (col8.html() == cross) && (col9.html() == cross)) {
-            green(col7, col8, col9); return true;
+            green(col7, col8, col9); return true; 
         } else if((col1.html() == cross) && (col4.html() == cross) && (col7.html() == cross)) {
-            green(col1, col4, col7); return true;
+            green(col1, col4, col7); return true; 
         } else if((col2.html() == cross) && (col5.html() == cross) && (col8.html() == cross)) {
-            green(col2, col5, col8); return true;
+            green(col2, col5, col8); return true; 
         } else if((col3.html() == cross) && (col6.html() == cross) && (col9.html() == cross)) {
-            green(col3, col6, col9); return true;
+            green(col3, col6, col9); return true; 
         } else if((col1.html() == cross) && (col5.html() == cross) && (col9.html() == cross)) {
-            green(col1, col5, col9); return true;
+            green(col1, col5, col9); return true; 
         } else if((col3.html() == cross) && (col5.html() == cross) && (col7.html() == cross)) {
-            green(col3, col5, col7); return true;
+            green(col3, col5, col7); return true; 
         }   
     }
 

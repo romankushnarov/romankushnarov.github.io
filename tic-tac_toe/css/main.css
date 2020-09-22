@@ -1,14 +1,52 @@
 html {
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #ABC8C7;
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-/* ------------------- FIELD ------------------- */
+.main {
+    margin-top: 10vh;
+}
+
+
+/* ------------------- PLAYERS ------------------- */
+
+
+.players {
+    margin: 0 auto 5vh;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 28px;
+}
+
+.player {
+
+}
+
+.player-title {
+    margin-bottom: 10px;
+}
+
+.player-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-score {
+
+}
+
+.player-score__count {
+
+}
 
 .overlay {
     display: none;
@@ -21,10 +59,13 @@ html {
     position: absolute;
 }
 
+
+/* ------------------- FIELD ------------------- */
+
+
 .container {
     max-width: 600px;
     margin: auto;
-    margin-top: 17vh;
 }
 
 .row {

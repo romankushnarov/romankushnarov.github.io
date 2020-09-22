@@ -9,11 +9,29 @@
     <!-- own styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <scetion class="main">
+    <section class="main">
         <div class="overlay"></div>
+        <section class="players">
+            <div class="player">
+                <div class="player-title">Player №1</div>
+                <div class="player-info">    
+                    <div class="player-score">Score:</div>
+                    <div class="player-score__count" id="player-1">0</div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-title">Player №2</div>
+                <div class="player-info">    
+                    <div class="player-score">Score:</div>
+                    <div class="player-score__count" id="player-2">0</div>
+                </div>
+            </div>
+        </section>
         <div class="container">
             <div class="row" id="row-1">
                 <div class="col" id="col-1"></i></div>
@@ -31,7 +49,7 @@
                 <div class="col" id="col-9"></div>
             </div>
         </div>
-    </scetion>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="js/script.js"></script>
