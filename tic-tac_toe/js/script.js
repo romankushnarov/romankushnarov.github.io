@@ -24,7 +24,7 @@ $(document).ready(function() {
         el1.children().css('color', 'green');
         el2.children().css('color', 'green');
     }
-
+    
     // icons 
 
     let cross = '<i class="fas fa-times"></i>';
@@ -116,5 +116,13 @@ $(document).ready(function() {
             green(col3, col5, col7); return true;
         }   
     }
+
+
+    // refresh
+
+    $('.refresh').click(function() {
+        player1.html('0');
+        player2.html('0');
+    })
 
 });
