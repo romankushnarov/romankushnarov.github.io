@@ -10,7 +10,16 @@ html {
 
 /* ------------------- FIELD ------------------- */
 
-
+.overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    color: #000;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
 
 .container {
     max-width: 600px;

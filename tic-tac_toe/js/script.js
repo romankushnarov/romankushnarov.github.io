@@ -21,8 +21,6 @@ $(document).ready(function() {
         el2.children().css('color', 'green');
     }
 
-
-
     // icons 
 
     let cross = '<i class="fas fa-times"></i>';
@@ -36,26 +34,27 @@ $(document).ready(function() {
     function stopGame() {
         col.html('');
         moveCounter = 0;
+        $('.overlay').css('display', 'none');
     }
 
     // Players moves 
+
     col.click(function() {
         if($(this).html() !== "") {
             return;
         } else {
             if(moveCounter % 2 == 0) {
-                $(this).html('<i class="fas fa-times"></i>');
+                $(this).html(cross);
                 moveCounter++;
             } else {
-                $(this).html('<i class="far fa-circle"></i>');
+                $(this).html(circle);
                 moveCounter++;
             }
         }
-        if(checkWinCross() || checkWinCircle()) {
-            setTimeout(stopGame, 1000);
-        } else if (moveCounter == 9) {
-            setTimeout(stopGame, 1000);
-        }
+        if((checkWinCross() || checkWinCircle()) || moveCounter == 9) {
+            $('.overlay').css('display', 'block');
+            setTimeout(stopGame, 1000);         
+        } 
         
     })
 
@@ -100,5 +99,3 @@ $(document).ready(function() {
     }
 
 });
-
-
