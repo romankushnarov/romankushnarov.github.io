@@ -12,5 +12,8 @@ $(document).ready(function() {
     menuToggle.onclick = function(){
         document.querySelector('.mobile-line').classList.toggle('mobile-line-active');
         document.querySelector('.mobile-nav').classList.toggle('mobile-nav-active');
+        document.querySelector('body').classList.toggle('hidden');
     }
+
+
 })

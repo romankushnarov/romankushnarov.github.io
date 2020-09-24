@@ -26,6 +26,9 @@ h2 {
     letter-spacing: -0.015em;
 }
 
+.hidden {
+    overflow: hidden;
+}
 
 
 /* ----------------------- header ----------------------- */
