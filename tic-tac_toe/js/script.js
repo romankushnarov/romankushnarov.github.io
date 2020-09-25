@@ -123,6 +123,6 @@ $(document).ready(function() {
     $('.refresh').click(function() {
         player1.html('0');
         player2.html('0');
+        col.html("");
     })
-
 });
