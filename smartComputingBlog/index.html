@@ -49,10 +49,16 @@
                         <ul class="mobile-nav__list">
 
                             <li class="mobile-nav__item">
-                                <a href="#" class="nav-item mob-nav-item mob-item__first">
+                                <div class="nav-item mob-nav-item mob-item__first">
                                     <img src="images/robot.svg" alt="Robot vacuum cleaners" class="nav-item-img">
-                                    <p class="nav-item-text">Robot vacuum cleaners</p>
-                                </a>
+                                    <a href="#" class="nav-item-text">Robot vacuum cleaners</a>
+                                </div>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#" class="nav-item__low-text">Comparison models</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#" class="nav-item__low-text">Buyer’s Guide</a>
                             </li>
                             <li class="mobile-nav__item">
                                 <a href="#" class="nav-item mob-nav-item ">
@@ -72,7 +78,17 @@
                                     <p class="nav-item-text">Blog</p>
                                 </a>
                             </li>
-                            <p>соц сети</p>
+                            <li class="mobile-nav__item mobile-nav__item-socials">
+                                <a href="#" class="nav-item mob-nav-item ">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="nav-item mob-nav-item ">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="nav-item mob-nav-item ">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
 
                         </ul>
 
@@ -83,7 +99,7 @@
                 <div class="nav-list">
                     <div class="dropdown nav-item">
                         <img src="images/robot.svg" alt="Robot vacuum cleaners" class="nav-item-img">
-                        <p class="nav-item-text">Robot vacuum cleaners</p>
+                        <a href="#" class="nav-item-text nav-item">Robot vacuum cleaners</a>
                         <div class="dropdown-child">
                             <div class="dropdown-wrapper">
                                 <a href="#">Comparison models</a>
@@ -116,15 +132,10 @@
                         <i class="fa fa-youtube-play"></i>
                     </a>
                 </div>
-                <div tabindex="0" class="mob-search">
-                    <i class="fa fa-search"></i>
-                    <div class="mob-search-wrapper">
-                        <div class="input-search mob-input-search">
-                            <form class="search-form mob-search-form">
-                            <input type="text" placeholder="Search...">
-                            <button type="submit"></button>
-                            </form>
-                        </div>
+                <div class="mob-search">
+                    <div class="mob-search-container">
+                        <input type="text" class="mob-search-input" placeholder="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
