@@ -114,6 +114,13 @@ table {
     outline: none;
 }
 
+.header-subline {
+    height: 3px;
+    width: 100vw;
+    background: rgb(238,0,17);
+background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, rgba(225,100,46,1) 100%);
+}
+
 .header-line {
     height: 10px;
     width: 100vw;
