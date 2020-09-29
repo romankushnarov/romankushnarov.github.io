@@ -271,7 +271,7 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 
 
 .mobile-icon {
-    z-index: 19;
+    /* z-index: 19; */
     display: none;
     position: relative;
     height: 30px;
@@ -308,25 +308,6 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
     transition: transform 0.2s ease-in, top 0.2s ease-in 0.2s;
 }
 
-.mobile-line.mobile-line-active{
-    background-color: transparent;
-    transition: all 0.1s ease-in;
-}
-
-.mobile-line.mobile-line-active::before{
-    top: 0;
-    left: 0;
-    transform: rotate(45deg);
-    transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
-}
-
-.mobile-line.mobile-line-active::after{
-    top: 0;
-    left: 0;
-    transform: rotate(-45deg);
-    transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
-}
-
 /* <!-- // ------------ MOBILE BUTTON ------------ --> */
 
 
@@ -341,6 +322,19 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
     transition: transform 0.4s ease-in;
 }
 
+.mobile-nav_header {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mobile-nav_cross {
+    margin-right: 10vw;
+    font-size: 26px;
+    color: #fff;
+}
+
 .mobile-nav.mobile-nav-active{
     transform: translateX(-100vw);
     transition: transform 0.4s ease-in;
@@ -348,9 +342,8 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 
 .mobile-nav__logo {
     font-size: 36px;
-    margin-top: 5vh;
-    margin-right: 10vw;
-    text-align: right;
+    margin-left: 10vw;
+    text-align: left;
     color: #fff;
 }
 
@@ -366,9 +359,9 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 .mobile-nav__item {
     padding-top: 20px;
     font-size: 24px;
-    margin-right: 10vw;
+    margin-left: 10vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .mobile-nav__item .nav-item-text {
@@ -378,12 +371,12 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 
 .mobile-nav__item-socials {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .mobile-nav__item-socials .mob-nav-item {
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .mobile-nav__link {
@@ -392,7 +385,7 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 }
 
 .mob-item__first {
-    margin-top: 7vh;
+    margin-top: 1vh;
 }
 
 .mob-nav-item {
@@ -441,7 +434,7 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
   transition: all 0.3s ease;
 }
 
-.mob-search-container .fa{
+.mob-search-container .fa {
   color: #ffffff;
   position: absolute;
   right: 5px;
@@ -451,7 +444,7 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
 }
 
 .mob-search-container .active{
-  width: 40vw;
+  width: 55vw;
   padding-left: 10px;
   padding-right: 10px;
   transition: all 0.5s ease;
@@ -497,6 +490,11 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
         display: flex;
         height: 30px;
         margin-right: 50px;
+    }
+    .mobile-nav-active .mobile-line {
+        position: fixed;
+        top: 30px;
+        right: 15px;
     }
     .search-form {
         display: none;

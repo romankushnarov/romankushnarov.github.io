@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <!-- reset css -->
-    <link rel="stylesheet" href="css/reset.css">
     <!-- own style -->
     <link rel="stylesheet" href="css/main.css">
     <title>Русэтикетка</title>
@@ -87,8 +85,27 @@
                     <h1>- лидер на российском рынке по производству этикеток.</h1>
                 </div>
                 <div class="col-lg-3 offset-lg-9 main-btn-wrapper">
-                    <button class="main-btn">Заказать онлайн</button>
+                    <button type="button" class="btn main-btn"">Заказать онлайн</button>
+                    <!-- <button type="button" class="btn main-btn" data-toggle="modal" data-target="#exampleModal">Заказать онлайн</button> -->
                 </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-main" role="document">
+                      <div class="modal-content main-modal-content">
+                        <div class="modal-body modal-body-main">
+                          <div class="row">
+                              <div class="col-md-9 modal-text"><span>Акция</span> - скидка на дизайн 30 %</div>
+                              <img src="images/offer-sale.svg" alt="Акция - скидка на дизайн 30 %" class="col-md-3 modal-img">
+                            </div>
+                        </div>
+                        <div class="modal-footer modal-footer-main d-flex justify-content-start">
+                          <form action="#" class="modal-form d-flex align-items-center">
+                              <input type="email" class="modal-email-input" placeholder="Введите Вашу почту">
+                              <input type="submit" class="modal-submit-input" value="Получить скидку">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>

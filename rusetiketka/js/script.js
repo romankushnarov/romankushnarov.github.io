@@ -14,6 +14,11 @@ $(document).ready(function() {
         document.querySelector('.mobile-nav').classList.toggle('mobile-nav-active');
         document.querySelector('body').classList.toggle('hidden');
     }
-
+    
+    window.onload = function () {
+        setTimeout(function () {
+            $('#exampleModal').modal('show');  
+        }, 10000)
+    }
 
 })
