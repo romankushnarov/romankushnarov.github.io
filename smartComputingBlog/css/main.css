@@ -460,6 +460,15 @@ background: linear-gradient(90deg, rgba(238,0,17,1) 0%, rgba(225,78,46,1) 50%, r
   color: #fff;
 }
 
+.mob-search_toggler {
+    background:transparent;
+    border: none;
+}
+
+.mob-search_toggler:focus {
+    outline: none;
+}
+
 
 /* -------------- adaptive -------------- */
 
