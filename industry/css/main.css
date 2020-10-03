@@ -61,8 +61,8 @@ table {
     padding: 10px 0;
 }
 
-.header-contact {
-}
+/* .header-contact {
+} */
 
 .header-contact__item {
     display: flex;
@@ -109,24 +109,13 @@ table {
 
 /* -------------- nav --------------  */
 
-.nav {
-
-}
 
 .nav-row {
     padding: 19px 0;
 }
 
-.logo {
-    
-}
-
 .logo-img {
     width: 290px;
-}
-
-.nav-list {
-
 }
 
 .nav-item {
@@ -237,9 +226,9 @@ table {
     color: #0f3c67;
 }
 
-.mobile-nav__buttons {
+/* .mobile-nav__buttons {
 
-}
+} */
 
 .mobile-nav__list {
     list-style: none;
@@ -351,9 +340,9 @@ table {
     margin-bottom: 58px;
 }
 
-.contact-row {
+/* .contact-row {
 
-}
+} */
 
 .contact-col-title {
     margin-bottom: 18px;
@@ -385,9 +374,9 @@ table {
     color: inherit;
 }
 
-.contact-form {
+/* .contact-form {
 
-}
+} */
 
 .contact-form__input {
     box-shadow: 3px 4px 16px rgba(199, 199, 199, 0.75);
@@ -503,9 +492,9 @@ table {
     padding: 90px 0;
 }
 
-.footer-row {
+/* .footer-row {
 
-}
+} */
 
 .footer-text {
     margin-top: 50px;
@@ -549,9 +538,9 @@ table {
 }
 
 
-.footer-list {
+/* .footer-list {
 
-}
+} */
 
 .footer-list__item {
     margin-bottom: 18px;
@@ -584,9 +573,9 @@ table {
     color: #f18636;
 }
 
-.footer-posts {
+/* .footer-posts {
     
-}
+} */
 
 .row-footer-post {
     margin-bottom: 15px;
@@ -651,7 +640,7 @@ table {
     position: absolute;
     top: 0;
     right: 0;
-    height: 53px;
+    height: 55px;
     padding-right: 19px;
     padding-left: 19px;
     background-color: #f18636;
