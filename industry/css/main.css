@@ -588,6 +588,14 @@ table {
     
 }
 
+.row-footer-post {
+    margin-bottom: 15px;
+}
+
+.row-footer-post:last-child {
+    margin-bottom: 0;
+}
+
 .footer-post__item {
     display: flex;
     align-items: center;
@@ -641,7 +649,7 @@ table {
 
 #footer-input__submit {
     position: absolute;
-    top: 1px;
+    top: 0;
     right: 0;
     height: 53px;
     padding-right: 19px;
