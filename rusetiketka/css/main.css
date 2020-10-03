@@ -165,6 +165,9 @@ h2 {
         height: 30px;
         /* margin-right: 15px; */
     }
+    .modal-img {
+
+    }
 }
 
 .mobile-line {
@@ -950,6 +953,19 @@ h2 {
         font-size: 34px;
         line-height: 56px;
     }
+    .modal-dialog { 
+        max-width: 80vw;
+    }
+    .main-modal-content {
+        padding: 40px;
+    }
+    .modal-text {
+        font-size: 60px;
+        line-height: 84px;
+    }
+    .modal-email-input {
+        width: 300px;
+    }
 }
 
 @media(max-width: 992px) {
@@ -999,6 +1015,14 @@ h2 {
     .data-text-dotted::before {
         width: 15px;
         height: 15px;
+    }
+    .modal-email-input {
+        width: 250px;
+        margin-right: 50px;
+    }
+    .modal-text {
+        font-size: 44px;
+        line-height: 70px;
     }
 }
 
@@ -1054,6 +1078,28 @@ h2 {
         padding: 15px;
         font-size: 24px;
         line-height: 36px;
+    }
+    .modal-form {
+        flex-direction: column;
+        margin: 0 auto; 
+    }
+    .modal-text {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .modal-email-input {
+        width: 300px;
+        margin-right: 0;
+    }
+    .modal-submit-input {
+        width: 300px;
+        margin-top: 15px;
+    }
+    .modal-img {
+        width: 300px;
+        margin: 0 auto;
     }
 } 
 
@@ -1175,6 +1221,25 @@ h2 {
         margin-top: 30px;
         font-size: 14px;
         line-height: 26px
+    }
+    .modal-dialog {
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal-text {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .main-modal-content {
+        padding: 20px;
+    }
+    .modal-dialog-main {
+        margin-top: 5vh;
+    }
+    .modal-email-input,
+    .modal-submit-input {
+        width: 100%;
     }
 }
 
