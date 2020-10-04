@@ -1819,6 +1819,9 @@ table {
     .connection {
         padding: 30px 0;
     }
+    .aboutUs {
+        padding: 30px 0 50px;
+    }
     .logo {
         margin-left: 7vw;
     }
@@ -1844,8 +1847,14 @@ table {
         padding: 30px 0;
     }
     .getQuite-title {
+        text-align: center;
         font-size: 18px;
         line-height: 32px;
+    }
+    .getQuote .col-lg-auto {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
     }
     .getQuote-btn {
         font-size: 20px;
