@@ -31,3 +31,8 @@ function goUp() {
       timeOut = setTimeout('goUp()',20);
    } else clearTimeout(timeOut);
 }
+
+$('.aboutUs-video__wrapper').click(function (e) {
+    window.open("https://www.youtube.com/", "_blank"); 
+});
+
