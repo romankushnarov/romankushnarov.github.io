@@ -1697,7 +1697,8 @@ table {
     .projects,
     .team,
     .news,
-    .clients {
+    .clients,
+    .aboutUs {
         padding: 45px 0;
     }
     .header-row {
@@ -1722,6 +1723,13 @@ table {
     }
     .choose .row-choose-item .col-lg-4:last-child {
         margin-bottom: 0;
+    }
+    .getQuite-title {
+        text-align: center;
+    }
+    .getQuote .col-lg-auto {
+        display: flex;
+        justify-content: center;
     }
     .row-choose-item .col-lg-4 .choose-item {
         width: 60%;
@@ -1847,13 +1855,10 @@ table {
         padding: 30px 0;
     }
     .getQuite-title {
-        text-align: center;
         font-size: 18px;
         line-height: 32px;
     }
     .getQuote .col-lg-auto {
-        display: flex;
-        justify-content: center;
         margin-top: 15px;
     }
     .getQuote-btn {
@@ -2033,6 +2038,9 @@ table {
 @media(max-width: 320px) {
     .col-footer-post__item {
         margin-left: 6vw;
+    }
+    .news-info__inner-value {
+        font-size: 14px;
     }
 }
 

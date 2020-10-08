@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.block {
+	display: block !important;
+}
+
+
+/* ------------------- bg-1 -------------------- */
+
+
+.cover-bg {
+	background-image: url(../images/bg1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+}
+
+
+/* ------------------- header -------------------- */
+
+.header {
+	/* background-color: rgba(113, 202, 255, 0.42); */
+}
+
+.container {
+	max-width: 1400px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-link {
+
+}
+
+.logo-img {
+	width: 290px;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-item {
+	color: #3f3f3f;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 17px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: 0.2s all ease-out;
+}
+
+.nav-item:hover {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 2px solid #006db7;
+}
+
+.nav-item:nth-child(5) {
+	margin-right: 54px;
+}
+
+.nav-item:last-child {
+	margin-right: 0;
+}
+
+.nav-tel {
+	text-align: center;
+}
+
+.nav-tel__number {
+	font-size: 21px;
+}
+
+.nav-tel__text {
+	margin-top: 5px;
+	letter-spacing: 0.8px;
+}
+
+/* <!-- ------------ MOBILE BUTTON ------------ --> */
+
+
+.mobile-icon {
+    z-index: 19;
+    display: none;
+    position: relative;
+    height: 30px;
+}
+
+.mobile-line {
+    position: relative;
+    top: 12px;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.mobile-line::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    top: -10px;
+    left: 0px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s ease-in 0.2s;
+}
+
+.mobile-line::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    top: 10px;
+    left: 0px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s ease-in 0.2s;
+}
+
+.mobile-line.mobile-line-active{
+    background-color: transparent;
+	transition: all 0.1s ease-in;
+	background-color: transparent;
+}
+
+.mobile-line.mobile-line-active::before{
+    top: 0;
+	left: 0;
+	background-color: #14283d;
+    transform: rotate(45deg);
+    transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
+}
+
+.mobile-line.mobile-line-active::after{
+    top: 0;
+	left: 0;
+	background-color: #14283d;
+    transform: rotate(-45deg);
+    transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
+}
+
+/* <!-- // ------------ MOBILE BUTTON ------------ --> */
+
+
+.mobile-nav {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+	top: 0;
+	z-index: 10;
+    right: -100vw;
+    background-color: #fff;
+    transition: transform 0.4s ease-in;
+}
+
+.mobile-nav.mobile-nav-active{
+    transform: translateX(-300px);
+    transition: transform 0.4s ease-in;
+}
+
+.mobile-nav__logo {
+    font-size: 36px;
+    margin: 37px 37px 0 37px;
+    color: rgba(255, 196, 0, 0.89);
+}
+
+.mobile-nav__buttons {
+
+}
+
+.mobile-nav__list {
+    list-style: none;
+	margin-top: 75px;
+}
+
+.mobile-nav__item {
+	padding-bottom: 13px;
+	padding-top: 13px;
+	font-size: 16px;
+	padding-left: 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.mobile-nav__item:first-child {
+	border-top: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.mobile-nav__link {
+    text-decoration: none;
+    color: #14283d;
+}
+
+.overlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+	display: none;
+	z-index: 9;
+}
+
+.mobile-nav-active .overlay {
+	display: block;
+}
+
+
+/* ------------------- order -------------------- */
+
+
+.order {
+	/* background-color: rgba(113, 202, 255, 0.42); */
+}
+
+.order .row {
+	padding-top: 190px;
+}
+
+.order-col:first-child {
+	padding-bottom: 240px;
+}
+
+.order-title {
+	color: #f5f5f5;
+	font-size: 53px;
+	font-weight: 700;
+}
+
+.order-line {
+	margin-top: 45px;
+	border-bottom: 7px solid #006db7;
+	width: 200px;
+}
+
+.order-text {
+	margin-top: 30px;
+	color: #f5f5f5;
+	font-size: 19px;
+	width: 510px;
+}
+
+.order-col:last-child {
+	position: relative;
+}
+
+.order-form {
+	position: absolute;
+	left: 80px;
+	top: 0;
+}
+
+.order-subtitle {
+	color: #44444417;
+	font-size: 72px;
+	font-weight: 700;
+}
+
+.order-subtext {
+	position: relative;
+	top: -17px;
+	color: #444444;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+
+/* ------------------- adaptive -------------------- */
+
+
+@media(max-width:1200px) {
+	.nav-list {
+		display: none;
+	}
+	.mobile-icon{
+        display: flex;
+        height: 30px;
+        margin-right: 10px;
+	}
+	.order .row {
+		padding-top: 100px;
+	}
+	.order-col:first-child {
+		padding-bottom: 185px;
+	}
+	.order-title {
+		font-size: 40px;
+	}
+	.order-subtitle {
+		font-size: 46px;
+	}
+}
+
+@media(max-width: 576px) {
+	.logo-img {
+		width: 60vw;
+	}
+	.order-col:first-child {
+		padding-bottom: 70px;
+	}
+	.order-form {
+		position: static;
+	}
+	.order-text {
+		width: auto;
+	}
+	.order-subtitle {
+		font-size: 38px;
+		color: #f5f5f536;
+	}
+	.order-subtext {
+		color: #f5f5f5;
+	}
+}
