@@ -7,9 +7,11 @@ menuToggle.onclick = function(){
     document.querySelector('.mobile-nav').classList.toggle('mobile-nav-active');
     if(counterMenu % 2 == 0) {
         document.querySelector('.overlay').classList.add('block');
+        document.querySelector('body').classList.add('hidden');
         counterMenu++;
     } else {
         document.querySelector('.overlay').classList.remove('block');
+        document.querySelector('body').classList.remove('hidden');
         counterMenu++;
     }
 }
