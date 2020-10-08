@@ -13,3 +13,10 @@ menuToggle.onclick = function(){
         counterMenu++;
     }
 }
+
+document.querySelector('.overlay').onclick = function() {
+    document.querySelector('.overlay').classList.remove('block');
+    document.querySelector('.mobile-line').classList.toggle('mobile-line-active');
+    document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
+    counterMenu++;
+}
