@@ -365,7 +365,7 @@ table {
 	display: flex;
 	justify-content: center;
 	/* margin-right: 50px; */
-	width: 175px;
+	/* width: 175px; */
 }
 
 .about-item__img {
@@ -376,11 +376,11 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 170px;
+	/* height: 170px; */
 }
 
 .item__inner-title {
-	max-width: 185px;
+	/* max-width: 185px; */
 	margin: 0 auto;
 	color: #000000a1;
 	font-size: 18px;
@@ -389,7 +389,7 @@ table {
 }
 
 .item__inner-text {
-	max-width: 200px;
+	/* max-width: 200px; */
 	color: #979797;
 	font-size: 14px;
 	line-height: 18px;
@@ -631,10 +631,10 @@ table {
 		margin-top: 40px;
 	}
 	.about-item__inner {
-		height: 140px;
+		/* height: 140px; */
 	}
 	.item__inner-text {
-		max-width: 265px;
+		/* max-width: 265px; */
 		margin: 0 auto;
 	}
 	.map__form-wrapper {
@@ -738,14 +738,14 @@ table {
 		width: 95%;
 		margin: 0 auto;
 	}
-	.about-item__img-wrapper {
+	/* .about-item__img-wrapper {
 		width: 40%;
-	}
+	} */
 	/* .about-item__img {
 		width: 100%;
 	} */
 	.about-item__inner {
-		height: 160px;
+		/* height: 160px; */
 	}
 	.carpark-item {
 		margin-top: 20px;
@@ -789,7 +789,7 @@ table {
 		font-size: 32px;
 	}
 	.about-item__inner {
-		height: 175px;
+		/* height: 175px; */
 	}
 	.map__form-title {
 		width: 245px;
