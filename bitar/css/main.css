@@ -366,7 +366,7 @@ table {
 	justify-content: center;
 	/* margin-right: 50px; */
 	/* width: 175px; */
-	width: 35%;
+	/* width: 35%; */
 }
 
 .about-item__img {
@@ -597,7 +597,7 @@ table {
 
 @media(max-width: 1440px) {
 	.about-item__img-wrapper {
-		margin-right: 30px;
+		/* margin-right: 10px; */
 		/* width: 140px; */
 	}
 }
@@ -716,6 +716,12 @@ table {
 	}
 }
 
+@media(max-width:678px) {
+	.about-item__img-wrapper {
+		margin-right: 20px;
+	}
+}
+
 @media(max-width: 576px) {
 	.about, 
 	.carpark {
@@ -747,7 +753,7 @@ table {
 		width: 100%;
 	} */
 	.about-item__inner {
-		height: 160px;
+		height: 190px;
 	}
 	.carpark-item {
 		margin-top: 20px;
@@ -790,11 +796,11 @@ table {
 	.order-subtitle {
 		font-size: 32px;
 	}
-	.about-item__inner {
-		height: 175px;
-	}
 	.map__form-title {
 		width: 245px;
 		font-size: 20px;
+	}
+	.item__inner-text {
+		font-size: 13px;
 	}
 }
