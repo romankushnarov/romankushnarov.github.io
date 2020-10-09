@@ -376,7 +376,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/* height: 170px; */
+	height: 170px;
 }
 
 .item__inner-title {
@@ -386,7 +386,6 @@ table {
 	font-size: 18px;
 	font-weight: 700;
 	text-align: center;
-	padding-bottom: 20px;
 }
 
 .item__inner-text {
@@ -631,9 +630,9 @@ table {
 	.about .col-xl-4:nth-child(3) {
 		margin-top: 40px;
 	}
-	/* .about-item__inner {
+	.about-item__inner {
 		height: 140px;
-	} */
+	}
 	.item__inner-text {
 		max-width: 265px;
 		margin: 0 auto;
@@ -745,9 +744,9 @@ table {
 	/* .about-item__img {
 		width: 100%;
 	} */
-	/* .about-item__inner {
+	.about-item__inner {
 		height: 160px;
-	} */
+	}
 	.carpark-item {
 		margin-top: 20px;
 	}
@@ -789,9 +788,9 @@ table {
 	.order-subtitle {
 		font-size: 32px;
 	}
-	/* .about-item__inner {
+	.about-item__inner {
 		height: 175px;
-	} */
+	}
 	.map__form-title {
 		width: 245px;
 		font-size: 20px;
