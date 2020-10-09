@@ -765,6 +765,10 @@ table {
 	.about-item__inner {
 		height: 190px;
 	}
+	.item__inner-title {
+		max-width: 135px;
+		font-size: 16px;
+	}
 	.carpark-item {
 		margin-top: 20px;
 	}
@@ -821,5 +825,5 @@ table {
 	.item__inner-text {
 		max-width: 130px;
 	}
-	
+
 }
