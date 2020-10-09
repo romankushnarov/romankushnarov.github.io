@@ -770,11 +770,92 @@ table {
 		width: 330px;
 		font-size: 22px;
 	}
+	.wheel-item__img {
+		width: 70px;
+	}
+	.wheel-item__text {
+		margin-top: 15px;
+		width: 285px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.wheel-item__bg-anim,
+	.wheel-img, 
+	.wheel-item__bg {
+		width: 280px;
+		height: 280px;
+	}
+	.wheel-item:nth-child(1) {
+		right: 10px;
+	}
+	.wheel-item:nth-child(2) {
+		bottom: 140px;
+		right: 0px;
+	}
+	.wheel-item:nth-child(3) {
+		left: 10px;
+	}
+	.wheel-item:nth-child(4) {
+		top: 80px;
+	}
+	.wheel-item:nth-child(5) {
+		top: 48px;
+		right: 230px;
+	}
 }
 
 @media(max-width: 992px) {
 	.footer-text {
 		width: auto;
+	}
+	.wheel {
+		padding: 40px 0;
+	}
+	.wheel-item {
+		margin-bottom: 40px;
+		flex-direction: row;
+	}
+	.wheel-item__img {
+		margin-right: 20px;
+	}
+	.wheel-item__bg-anim {
+		display: none;
+	}
+	.wheel-item {
+		position: static;
+	}
+	.wheel-item__bg-anim {
+		display: none;
+	}
+	.wheel-img,
+	.wheel-item__bg {
+		width: auto;
+		height: auto;
+	}
+	.wheel-item:nth-child(1) {
+		transform: unset;
+	}
+	.wheel-item:nth-child(2) {
+		transform: unset;
+	}
+	.wheel-item:nth-child(3) {
+		transform: unset;
+	}
+	.wheel-item:nth-child(4) {
+		transform: unset;
+	}
+	.wheel-item:nth-child(5) {
+		transform: unset;
+	}
+	.wheel-item__bg-anim {
+		position: static;
+		transform: unset;
+	}
+	.wheel-item__bg {
+		position: static;
+		top: 0;
+		left: 0;
+		transform: unset;
 	}
 }
 
@@ -904,6 +985,14 @@ table {
 	}
 	.carpark-line {
 		border-bottom: 2px solid #006db7;
+	}
+	.wheel-item__bg {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.wheel-item__text {
+		width: unset;
+		font-size: 18px;
 	}
 	.map {
 		height: 100vh;
