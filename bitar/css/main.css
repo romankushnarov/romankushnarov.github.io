@@ -306,7 +306,7 @@ table {
 }
 
 .order-subtitle {
-	color: #44444417;
+	color: rgba(68, 68, 68, 0.08);;
 	font-size: 72px;
 	font-weight: 700;
 }
@@ -353,7 +353,7 @@ table {
 }
 
 .about-item {
-	background-color: #ffffffd5;
+	background-color: rgba(255, 255, 255, 0.85);;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
