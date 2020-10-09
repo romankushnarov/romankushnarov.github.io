@@ -584,6 +584,11 @@ table {
 
 .wheel-item__img {
 	width: 90px;
+	transition: 0.3s all ease-out;
+}
+
+.wheel-item__img:hover {
+	transform: scale(1.2);
 }
 
 .wheel-item__text {
