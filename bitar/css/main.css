@@ -364,7 +364,7 @@ table {
 .about-item__img-wrapper {
 	display: flex;
 	justify-content: center;
-	margin-right: 50px;
+	/* margin-right: 50px; */
 	width: 175px;
 }
 
@@ -389,7 +389,7 @@ table {
 }
 
 .item__inner-text {
-	max-width: 195px;
+	max-width: 200px;
 	color: #979797;
 	font-size: 14px;
 	line-height: 18px;
@@ -596,7 +596,7 @@ table {
 @media(max-width: 1440px) {
 	.about-item__img-wrapper {
 		margin-right: 30px;
-		width: 140px;
+		/* width: 140px; */
 	}
 }
 
@@ -679,9 +679,9 @@ table {
 	.about .col-xl-4:nth-child(2) {
 		margin-top: 40px;
 	}
-	.about-item__img-wrapper {
+	/* .about-item__img-wrapper {
 		width: 175px;
-	}
+	} */
 	.carpark-line-col {
 		width: 80%;
 	}
@@ -741,9 +741,9 @@ table {
 	.about-item__img-wrapper {
 		width: 40%;
 	}
-	.about-item__img {
+	/* .about-item__img {
 		width: 100%;
-	}
+	} */
 	.about-item__inner {
 		height: 160px;
 	}
