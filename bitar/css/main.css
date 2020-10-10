@@ -490,13 +490,35 @@ table {
 
 
 .wheel {
+	overflow: hidden;
 	padding: 350px;
 	background-color: #a4ddff;
+	position: relative;
 }
+
+.wheel-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease;
+	animation: rotateBg 25s linear infinite;
+}
+
+@keyframes rotateBg {
+    0% {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 
 .wheel .container {
 	display: flex;
 	justify-content: center;
+	z-index: 3;
 }
 
 .wheel-img {
@@ -523,20 +545,23 @@ table {
 
 .wheel-item__bg-anim {
 	top: 3%;
-	left: 3%;
-	transform: translate(-50%, -50%);
+	/* left: 3%; */
+	/* transform: translate(-50%, -50%); */
 	position: absolute;
-	background-image: url(../images/wheel.png);
+	/* background-image: url(../images/wheel.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
-	z-index: 1;
-	height: 340px;
-	width: 340px;
+	background-size: contain; */
+	z-index: 2;
+	/* height: 340px;
+	width: 340px; */
 	transition: all 0.5s ease;
-	animation: rotate 5s linear infinite;
+	animation: rotate 10s linear infinite;
 }
 
+.wheel-item__bg-anim:hover {
+	transform: scale(1.2);
+}
 
 @keyframes rotate {
     0% {
@@ -812,6 +837,9 @@ table {
 @media(max-width: 992px) {
 	.footer-text {
 		width: auto;
+	} 
+	.wheel-bg {
+		display: none;
 	}
 	.wheel {
 		padding: 40px 0;
