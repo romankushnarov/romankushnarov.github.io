@@ -637,6 +637,9 @@ html {
         padding-top: 0;
         padding-bottom: 0;
     }
+    .bottom-img {
+        width: 100vw;
+    }
     .support-title {
         text-align: center;
     }
@@ -653,6 +656,18 @@ html {
     }
     .support .btn-row {
         margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .support-gift {
+        padding-top: 100px;
+        position: relative;
+        top: -70px;
+        background-image: url(../images/bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .support .help-btn {
+        margin-right: 0;
     }
     .support-gift__item {
         width: 50%;
