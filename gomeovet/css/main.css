@@ -424,13 +424,24 @@ html {
 }
 
 @media(max-width: 576px) {
+    .header {
+        background-image: url(../images/bg1-mob.png);
+        background-size: cover;
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
     .logo-img {
         width: 70vw;
+    }
+    .header-menu__btn {
+        width: 30px;
+        height: 30px;
     }
     .header-call__btn {
         display: none;
     }
     .help {
+        padding: 0px 0 110px;
         background: unset;
     }
     .help-title, .support-title {
@@ -453,17 +464,54 @@ html {
     .support {
         background: unset;
         padding-top: 0;
+        padding-bottom: 0;
+    }
+    .support-help__item-img {
+        width: 70px;
     }
     .support-help__row {
         margin-top: 40px;
     }
     .support-help__item {
-        width: 75vw !important;
+        width: 82vw !important;
         margin: 0 auto;
     }
     #support-help__item-2,
     #support-help__item-4,
     #support-help__item-6 {
         margin-top: 40px;
+    }
+}
+ 
+@media(max-width: 320px) {
+    .header {
+        padding-bottom: 40px;
+    }
+    .logo-img {
+        width: 65vw;
+    }
+    .help-title, .support-title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .item-text {
+        font-size: 18px;
+        line-height: 21px; 
+    }
+    .col-help-between {
+        margin-top: 25px;
+    }
+    .help-btn {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 6px 30px;
+    }
+    .help-subbtn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .support-help__item-text {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
