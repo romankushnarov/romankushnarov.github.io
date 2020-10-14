@@ -270,21 +270,67 @@ html {
 
 #support-help__item-1 {
     width: 440px;
+    position: relative;
+    left: 35px;
 }
 #support-help__item-2 {
     width: 480px;
+    position: relative;
+    left: 35px;
 }
 #support-help__item-3 {
     width: 400px;
+    position: relative;
+    left: 35px;
 }
 #support-help__item-4 {
     width: 550px;
+    position: relative;
+    left: 35px;
 }
 #support-help__item-5 {
     width: 485px;
+    position: relative;
+    left: 35px;
 }
 #support-help__item-6 {
     width: 465px;
+    position: relative;
+    left: 35px;
+}
+
+.support-help__item::before {
+    top: -30px;
+    left: -35px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFB168;
+}
+
+#support-help__item-1::before {
+    position: absolute;
+    content: "1";
+}
+#support-help__item-2::before {
+    position: absolute;
+    content: "2";
+}
+#support-help__item-3::before {
+    position: absolute;
+    content: "3";
+}
+#support-help__item-4::before {
+    position: absolute;
+    content: "4";
+}
+#support-help__item-5::before {
+    position: absolute;
+    content: "5";
+}
+#support-help__item-6::before {
+    position: absolute;
+    content: "6";
 }
 
 .support-help__item-img {
@@ -361,6 +407,12 @@ html {
     }
     #support-help__item-6 {
         width: 370px;
+    }
+    .support-help__item::before {
+        top: -20px;
+        left: -25px;
+        font-size: 24px;
+        line-height: 110%;
     }
     .support-help__item-img {
         width: 80px;
@@ -479,11 +531,16 @@ html {
         width: 82vw !important;
         margin: 0 auto;
     }
+    .support-help__item {
+        left: 0px !important;
+        margin-right: 5px;
+    }
     #support-help__item-2,
     #support-help__item-4,
     #support-help__item-6 {
         margin-top: 40px;
     }
+
 }
  
 @media(max-width: 320px) {
