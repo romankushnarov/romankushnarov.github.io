@@ -239,7 +239,7 @@ html {
 .support {
     position: relative;
     bottom: 100px;
-    padding: 200px 0;
+    padding: 200px 0 250px;
     background-image: url(../images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,12 +351,160 @@ html {
 
 .support .btn-row {
     margin-top: 10px;
+    margin-bottom: 130px;
+}
+
+.support-gift__row {
+    margin-top: 80px;
+}
+
+.support-gift__item {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+
+.support-gift__item-img__wrapper {
+    height: 195px;
+    width: 100%;
+    position: relative;
+}
+
+.support-gift__item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.support-gift__item-text__wrapper {
+    background-color: #fff;
+    height: 130px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    /* top: -4px; */
+}
+
+.support-gift__item-text {
+    padding: 20px 40px 0;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #262121;
+}
+
+
+/* ----------------- about -----------------  */
+
+
+.about {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 450px;
+    background-image: url(../images/bottom1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 0;
+}
+
+.about-cat__img {
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    width: 18vw;
+}
+
+.about-bowl__img {
+    position: absolute;
+    bottom: 170px;
+    right: 0;
+    z-index: -1;
+    width: 15vw;
+}
+
+.about .container {
+    z-index: 2;
+}
+
+.about-title {
+    z-index: 2;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 64px;
+    letter-spacing: 0.01em;
+    color: #262121;
+}
+
+.about-row {
+
+}
+
+.about-info {
+
+}
+
+.about-info__title {
+    margin-top: 75px;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #FFB168;
+    font-weight: bold;
+}
+
+.about-info__text:last-child {
+    font-weight: 500;
+}
+
+.about-info__text {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #262121;
+    margin-top: 20px;
+}
+
+.about-team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-team__item-img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.about-team__item-title {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.about-team__item-text {
+    font-size: 25px;
+    max-width: 400px;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1EB4E3;
 }
 
 
 
 /* ----------------- adaptive -----------------  */
 
+@media(max-width: 1440px) {
+    .about-cat__img {
+        display: none;
+    }
+}
 
 @media(max-width: 1024px) {
     .header {
@@ -421,6 +569,32 @@ html {
         font-size: 22px;
         line-height: 30px;
     }
+    .about-title {
+        font-size: 50px;
+        line-height: 56px;
+    }
+    .about-info__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .about-info__title {
+        margin-top: 62px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .about-team__item-img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .about-team__item-title {
+        font-size: 28px;
+        line-height: 150%;
+    }
+    .about-team__item-text {
+        font-size: 18px;
+        max-width: 300px;
+        line-height: 150%; 
+    }
 }
 
 @media(max-width: 992px) {
@@ -471,7 +645,7 @@ html {
         justify-content: center;
     }
     .support-help__item {
-        width: unset !important;
+        width: 85% !important;
     }
     .support-help__item-text {
         font-size: 20px;
@@ -480,7 +654,53 @@ html {
     .support .btn-row {
         margin-top: 30px;
     }
-
+    .support-gift__item {
+        width: 50%;
+        margin: 35px auto 0;
+    }
+    .support-gift__row {
+        margin-top: 35px;
+    }
+    .support-gift__row:last-child {
+        margin-top: 0;
+    }
+    .support .col-lg-4:first-child .support-gift__item:first-child {
+        margin-top: 35px;
+    }
+    .about {
+        padding-top: 100px;
+    }
+    .about .container {
+        width: 85%;
+    }
+    .about-cat__img {
+        display: block;
+        top: -20px;
+    }
+    .about-info__title {
+        text-align: center;
+    }
+    .about .btn-row {
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .about-team__item {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 35px;
+    }
+    .about-team__item:first-child {
+        margin-top: 60px;
+    }
+    .about-team__item-img {
+        max-width: 250px;
+        max-height: 250px;
+        margin-right: 60px;
+    }
+    .about-team__item-title,
+    .about-team__item-text {
+        text-align: left;
+    }
 }
 
 @media(max-width: 576px) {
@@ -540,7 +760,56 @@ html {
     #support-help__item-6 {
         margin-top: 40px;
     }
-
+    .support-gift__item {
+        width: 93%;
+    }
+    .support-gift__item-text__wrapper {
+        height: 120px;
+    }
+    .support-gift__item-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .about {
+        padding-bottom: 100px;
+    }
+    .about-cat__img {
+        top: 35px;
+        width: 32vw;
+    }
+    .about .container {
+        width: unset;
+    }
+    .about-title {
+        font-size: 35px;
+        line-height: 41px;
+        text-align: center;
+    }
+    .about-info__title {
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .about-info__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .about-team__item-img {
+        max-width: 130px;
+        max-height: 130px;
+        margin-right: 30px;
+    }
+    .about-team__item-title {
+        font-size: 18px;
+        line-height: 180%;
+    }
+    .about-team__item-text {
+        font-size: 13px;
+        line-height: 180%;
+    }
+    .about-bowl__img {
+        bottom: 20px;
+    }
 }
  
 @media(max-width: 320px) {
