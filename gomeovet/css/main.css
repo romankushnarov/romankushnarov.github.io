@@ -386,6 +386,9 @@ html {
         align-items: center;
         margin-top: 40px;
     }
+    .help {
+        background: unset;
+    }
     .help-btn,
     .help-subbtn {
         margin-top: 0;
@@ -402,6 +405,11 @@ html {
     .help-img {
         width: 140vw;
         transform: translateX(-23vw);
+    }
+    .support {
+        background: unset;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .support-title {
         text-align: center;
@@ -460,11 +468,6 @@ html {
     .help-subbtn {
         font-size: 20px;
         line-height: 23px;
-    }
-    .support {
-        background: unset;
-        padding-top: 0;
-        padding-bottom: 0;
     }
     .support-help__item-img {
         width: 70px;
