@@ -147,6 +147,7 @@ html {
     background-size: cover;
     background-position: bottom;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 .row-help {
