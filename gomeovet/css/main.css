@@ -1,0 +1,468 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}  
+
+.container {
+    max-width: 1300px;
+}
+
+/* ----------------- header -----------------  */
+
+
+.header {
+    background-image: url(../images/bg1.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 15px;
+    padding-bottom: 130px;
+}
+
+.logo-img {
+
+}
+
+.header-call__btn {
+    border: 2px solid #1EB4E3;
+    border-radius: 30px;
+    padding: 8px 45px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.005em;
+    color: #1EB4E3;
+    margin-right: 30px;
+    background: transparent;
+    transition: 0.2s all ease-out;
+}
+
+.header-call__btn:hover {
+    border-color: #20CAFF;
+    color: #20CAFF;
+}
+
+.header-call__btn:focus {
+    outline: none;
+    border-color: #FFB168;
+    color: #FFB168;
+}
+
+.header-menu__btn {
+    border: 2px solid #1EB4E3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.header-menu__btn-line {
+    width: 17px;
+    height: 1px;
+    background-color: #1EB4E3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-menu__btn-line::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 1px;
+    background-color: #1EB4E3;
+    top: 5px;
+}
+
+.header-menu__btn-line::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 1px;
+    background-color: #1EB4E3;
+    bottom: 5px;
+}
+
+/* ----------------- header -----------------  */
+
+
+.help {
+    position: relative;
+    padding: 90px 0 200px;
+    background-image: url(../images/bottom1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+}
+
+.row-help {
+    
+}
+
+.help-col {
+    z-index: 1;
+}
+
+.help-title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 64px;
+    letter-spacing: -0.005em;
+    color: #262121;
+}
+
+.help-title span {
+    color: #FFB168;
+}
+
+.item-text {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.005em;
+    color: #262121;
+}
+
+.help-btn {
+    margin-top: 60px;
+    background-color: #1EB4E3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    padding: 12px 55px;
+    transition: 0.2s all ease-out;
+    border: none;
+}
+
+.help-btn:hover {
+    background-color: #20CAFF;
+}
+
+.help-btn:focus {
+    outline: none;
+    background-color: #FFB168;
+}
+
+.help-subbtn {
+    border: none;
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: -0.005em;
+    color: #1EB4E3;
+    background: transparent;
+    transition: 0.2s all ease-out;
+}
+
+.help-subbtn:hover {
+    color: #20CAFF;
+}
+
+.help-subbtn:focus {
+    outline: none;
+    color: #FFB168;
+}
+
+.col-absolute {
+    position: absolute;
+    right: -180px;
+    top: 80px;
+}
+
+.help-img {
+    width: 65vw;
+}
+
+
+
+/* ----------------- support -----------------  */
+
+
+.support {
+    position: relative;
+    bottom: 100px;
+    padding: 200px 0;
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.support-title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 64px;
+    letter-spacing: 0.01em;
+    color: #262121;
+}
+
+.support-title span {
+    color: #FFB168;
+}
+
+.support-help__row {
+    margin-top: 45px;
+}
+
+.support-help__item {
+    display: flex;
+    align-items: center;
+}
+
+
+#support-help__item-1 {
+    width: 440px;
+}
+#support-help__item-2 {
+    width: 480px;
+}
+#support-help__item-3 {
+    width: 400px;
+}
+#support-help__item-4 {
+    width: 550px;
+}
+#support-help__item-5 {
+    width: 485px;
+}
+#support-help__item-6 {
+    width: 465px;
+}
+
+.support-help__item-img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.support-help__item-text {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.005em;
+    color: #262121;
+}
+
+.support-help__item-text span {
+    font-weight: 500;
+}
+
+.support .btn-row {
+    margin-top: 10px;
+}
+
+
+
+/* ----------------- adaptive -----------------  */
+
+
+@media(max-width: 1024px) {
+    .header {
+        padding-bottom: 100px;
+    }
+    .help-title,
+    .support-title {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .item-text {
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 30px; 
+    }
+    .help {
+        position: relative;
+        padding: 20px 0 110px;
+    }
+    .help-btn {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    .help-subbtn {
+        font-size: 20px;
+    }
+    .col-absolute {
+        top: 70px;
+        right: -110px;
+    }
+    .support {
+        padding: 125px 0 150px;
+    }
+    #support-help__item-1 {
+        width: 350px;
+    }
+    #support-help__item-2 {
+        width: 363px;
+    }
+    #support-help__item-3 {
+        width: 360px;
+    }
+    #support-help__item-4 {
+        width: 440px;
+    }
+    #support-help__item-5 {
+        width: 100%;
+    }
+    #support-help__item-6 {
+        width: 370px;
+    }
+    .support-help__item-img {
+        width: 80px;
+    }
+    .support-help__item-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    .logo-img {
+        width: 350px;
+    }
+    .help .help-col{
+        text-align: center;
+    }
+    .row-help-center {
+        justify-content: center;
+    }
+    .col-help-between {
+        flex-direction: row !important;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .help-btn,
+    .help-subbtn {
+        margin-top: 0;
+    }
+    .help-btn {
+        margin-right: 20px;
+    }
+    .col-absolute {
+        margin-top: 50px;
+        position: static;
+        top: 0;
+        right: 0;
+    }
+    .help-img {
+        width: 140vw;
+        transform: translateX(-23vw);
+    }
+    .support-title {
+        text-align: center;
+    }
+    .support-help__row .col-lg-6 {
+        display: flex;
+        justify-content: center;
+    }
+    .support-help__item {
+        width: unset !important;
+    }
+    .support-help__item-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .support .btn-row {
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width: 576px) {
+    .logo-img {
+        width: 70vw;
+    }
+    .header-call__btn {
+        display: none;
+    }
+    .help {
+        background: unset;
+    }
+    .help-title, .support-title {
+        font-size: 35px;
+        line-height: 41px;
+    }
+    .item-text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .help-btn {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 8px 40px;
+    }
+    .help-subbtn {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .support {
+        background: unset;
+        padding-top: 0;
+    }
+    .support-help__row {
+        margin-top: 40px;
+    }
+    .support-help__item {
+        width: 75vw !important;
+        margin: 0 auto;
+    }
+    #support-help__item-2,
+    #support-help__item-4,
+    #support-help__item-6 {
+        margin-top: 40px;
+    }
+}
