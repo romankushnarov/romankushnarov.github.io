@@ -401,7 +401,7 @@ html {
 
 .about {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-bottom: 450px;
     background-image: url(../images/bottom1.png);
     background-repeat: no-repeat;
@@ -614,6 +614,7 @@ html {
     }
     .help {
         background: unset;
+        padding: 0;
     }
     .help-btn,
     .help-subbtn {
@@ -633,6 +634,7 @@ html {
         transform: translateX(-23vw);
     }
     .support {
+        bottom: 0;
         background: unset;
         padding-top: 0;
         padding-bottom: 0;
@@ -653,6 +655,10 @@ html {
     }
     .support .btn-row {
         margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .support-gift {
+        padding: 50px 0;
     }
     .support-gift__item {
         width: 50%;
@@ -668,10 +674,13 @@ html {
         margin-top: 35px;
     }
     .about {
-        padding-top: 100px;
+        padding-bottom: 260px;
     }
     .about .container {
         width: 85%;
+    }
+    .about-title {
+        text-align: center;
     }
     .about-cat__img {
         display: block;
@@ -760,6 +769,12 @@ html {
     #support-help__item-6 {
         margin-top: 40px;
     }
+    .support-gift {
+        padding: 150px 0;
+        background-image: url(../images/group-bg__mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .support-gift__item {
         width: 93%;
     }
@@ -771,10 +786,10 @@ html {
         line-height: 30px;
     }
     .about {
-        padding-bottom: 100px;
+        padding-bottom: 250px;
     }
     .about-cat__img {
-        top: 35px;
+        top: -70px;
         width: 32vw;
     }
     .about .container {
@@ -783,7 +798,6 @@ html {
     .about-title {
         font-size: 35px;
         line-height: 41px;
-        text-align: center;
     }
     .about-info__title {
         margin-top: 30px;
@@ -808,7 +822,8 @@ html {
         line-height: 180%;
     }
     .about-bowl__img {
-        bottom: 20px;
+        width: 25vw;
+        bottom: 130px;
     }
 }
  
@@ -842,5 +857,9 @@ html {
     .support-help__item-text {
         font-size: 18px;
         line-height: 24px;
+    }
+    .about-bowl__img {
+        width: 23vw;
+        bottom: 150px;
     }
 }
