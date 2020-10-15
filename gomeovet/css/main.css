@@ -243,7 +243,7 @@ html {
 .support {
     position: relative;
     bottom: 100px;
-    padding: 200px 0 250px;
+    padding: 230px 0 250px;
     background-image: url(../images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -397,6 +397,9 @@ html {
 }
 
 .support-gift__item-text__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     height: 130px;
     border-bottom-left-radius: 30px;
@@ -406,7 +409,7 @@ html {
 }
 
 .support-gift__item-text {
-    padding: 20px 40px 0;
+    padding: 0 40px;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
@@ -723,7 +726,14 @@ html {
 
 /* ----------------- adaptive -----------------  */
 
-
+@media(min-width: 2440px) {
+    .help-img {
+        width: 50vw;
+    }
+    .support {
+        bottom: 150px;
+    }
+}
 
 
 @media(max-width: 1440px) {

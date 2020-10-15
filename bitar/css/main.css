@@ -1063,3 +1063,152 @@ table {
 	}
 
 }
+
+
+.steps {
+	margin: 90px 0;
+}
+
+.steps-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.steps-row-2 {
+	margin-top: 50px;
+	justify-content: space-evenly;
+}
+
+.steps-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 190px;
+}
+
+.steps-title {
+	font-size: 18pt;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.steps-title span {
+	color: #DF1618;
+}
+
+.steps-text {
+	font-size: 16px;
+    line-height: 28px;
+}
+
+.steps-item i {
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.steps-item i::before {
+	padding: 1.25em;
+	border-radius: 50%;
+	background-color: #DF1618;
+}
+
+.steps-arrow {
+	max-width: 240px;
+}
+
+.steps-arrow__angle {
+	position: relative;
+	bottom: 50px;
+	max-width: 165px;
+}
+
+@media(max-width: 1200px) {
+	.steps-arrow {
+		max-width: 150px;
+	}
+	.steps-arrow__angle {
+		max-width: 105px;
+		bottom: 30px;
+	}
+}
+
+@media(max-width: 900px) {
+	.steps-arrow {
+		max-width: 115px;
+	}
+	.steps-arrow__angle {
+		max-width: 80px;
+		bottom: 30px;
+	}
+}
+
+@media(max-width: 768px) {
+	.steps {
+		margin-top: 0;
+	}
+	.steps-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.steps-row-2 {
+		flex-direction: column-reverse;
+	}
+	.steps-item {
+		margin-top: 115px;
+	}
+	.steps-row-2 {
+		margin-top: 0;
+	}
+	.steps-row-2 .steps-item:last-child {
+		margin-top: 0;
+	}
+	.steps-item i {
+		font-size: 48px;
+		margin-bottom: 80px;
+	}
+	.steps-arrow  {
+		display: none;
+	}
+	.steps-arrow__angle {
+		display: none;
+	}
+}
+
+@media(max-width: 576px) {
+	.steps-item {
+		margin-top: 80px;
+	}
+	.steps-item i {
+		margin-bottom: 55px;
+		font-size: 30px;
+	}
+}
+
+
+.img-map {
+	padding: 90px 5vw;
+}
+
+.img-map__title {
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 27px;
+	text-align: center;
+	color: #4A4A4A;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+@media(max-width: 992px) {
+	.img-map {
+		padding: 65px 5vw;
+	}
+}
+
+@media(max-width: 576px) {
+	.img-map {
+		padding: 40px 5vw;
+	}
+}
