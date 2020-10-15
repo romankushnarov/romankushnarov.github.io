@@ -1039,8 +1039,8 @@ html {
         right: -110px;
     }
     .support {
-        padding: 125px 0 150px;
-        bottom: 65px;
+        /* padding: 125px 0 150px;
+        bottom: 65px; */
     }
     #support-help__item-1 {
         width: 350px;
@@ -1321,7 +1321,7 @@ html {
         margin-top: 40px;
     }
     .support-gift {
-        padding: 150px 0;
+        /* padding: 150px 0; */
         /* background-image: url(../images/group-bg__mob.png);
         background-repeat: no-repeat;
         background-size: cover; */
@@ -1383,7 +1383,7 @@ html {
         padding-bottom: 0;
     }
     .extra-help {
-        padding: 150px 0;
+        /* padding: 150px 0; */
         /* background-image: url(../images/group-bg__mob.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1417,7 +1417,7 @@ html {
     }
     .extra-shelter {
         position: relative;
-        bottom: 200px;
+        /* bottom: 200px; */
     }
     .extra-shelter__item-img__wrapper {
         height: 150px;
