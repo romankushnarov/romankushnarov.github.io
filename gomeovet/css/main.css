@@ -65,10 +65,10 @@ html {
 
 
 .header {
-    /* background-image: url(../images/bg1.png);
+    background-image: url(../images/bg1.png);
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: bottom; */
+    background-position: bottom;
     padding-top: 15px;
     padding-bottom: 130px;
 }
@@ -142,13 +142,13 @@ html {
 
 .help {
     position: relative;
-    /* padding: 90px 0 200px; */
+    padding: 90px 0 200px;
     /* background-image: url(../images/bottom1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; */
     z-index: 1;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .row-help {
