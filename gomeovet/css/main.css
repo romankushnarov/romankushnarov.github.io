@@ -65,10 +65,10 @@ html {
 
 
 .header {
-    background-image: url(../images/bg1.png);
+    /* background-image: url(../images/bg1.png);
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom; */
     padding-top: 15px;
     padding-bottom: 130px;
 }
@@ -142,11 +142,11 @@ html {
 
 .help {
     position: relative;
-    padding: 90px 0 200px;
-    background-image: url(../images/bottom1.png);
+    /* padding: 90px 0 200px; */
+    /* background-image: url(../images/bottom1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
     z-index: 1;
     overflow-x: hidden;
 }
@@ -242,12 +242,12 @@ html {
 
 .support {
     position: relative;
-    bottom: 100px;
-    padding: 230px 0 250px;
-    background-image: url(../images/bg2.png);
+    /* bottom: 100px; */
+    /* padding: 230px 0 250px; */
+    /* background-image: url(../images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
 }
 
 .support-title {
@@ -424,12 +424,12 @@ html {
 
 .about {
     position: relative;
-    /* overflow: hidden; */
-    padding-bottom: 450px;
-    background-image: url(../images/bottom1.png);
+    /* overflow-y: hidden; */
+    /* padding-bottom: 450px; */
+    /* background-image: url(../images/bottom1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
     z-index: 1;
 }
 
@@ -524,14 +524,14 @@ html {
 
 
 .extra {
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
     position: relative;
-    bottom: 220px;
-    padding: 200px 0 250px;
-    background-image: url(../images/bg2.png);
+    /* bottom: 220px;
+    padding: 200px 0 250px; */
+    /* background-image: url(../images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
 }
 
 .extra-help {
@@ -632,7 +632,7 @@ html {
 }
 
 .extra-shelter .support-title {
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .extra-shelter__carousel {
@@ -729,7 +729,7 @@ html {
 
 .homeAndReports {
     position: relative;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 .homeAndReports .container {
@@ -1182,7 +1182,7 @@ html {
     }
     .about {
         background: unset;
-        padding-bottom: 120px;
+        /* padding-bottom: 120px; */
     }
     .about .container {
         width: 85%;
@@ -1265,8 +1265,8 @@ html {
 
 @media(max-width: 576px) {
     .header {
-        background-image: url(../images/bg1-mob.png);
-        background-size: cover;
+        /* background-image: url(../images/bg1-mob.png);
+        background-size: cover; */
         padding-bottom: 50px;
         padding-top: 5px;
     }
@@ -1322,9 +1322,9 @@ html {
     }
     .support-gift {
         padding: 150px 0;
-        background-image: url(../images/group-bg__mob.png);
+        /* background-image: url(../images/group-bg__mob.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
     }
     .support-gift__item {
         width: 93%;
@@ -1337,7 +1337,7 @@ html {
         line-height: 30px;
     }
     .about {
-        padding-bottom: 285px;
+        /* padding-bottom: 285px; */
     }
     .about-cat__img {
         top: -70px;
@@ -1384,11 +1384,11 @@ html {
     }
     .extra-help {
         padding: 150px 0;
-        background-image: url(../images/group-bg__mob.png);
+        /* background-image: url(../images/group-bg__mob.png);
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        bottom: 200px;
+        position: relative; */
+        /* bottom: 200px; */
     }
     .extra-help .col-lg-6 {
         width: 95%;
