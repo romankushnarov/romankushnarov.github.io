@@ -22,12 +22,3 @@ document.querySelector('.overlay').onclick = function() {
     document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
     counterMenu++;
 }
-
-// let newSelect = document.querySelector('.form-select');
-// let newSelectClone = newSelect.cloneNode(true);
-// $('.form-select').on('input', function () {
-//   $(".price-num").text($('option:selected').val());
-// //   if($(".price-num").text() != 0) {
-// //     document.querySelector('.form1').appendChild(newSelectClone);
-// //   }
-// });
