@@ -1,3 +1,32 @@
+const menuToggle = document.querySelector('#menuToggle');
+const mobileMenuToggle = document.querySelector('#mobileMenuToggle');
+const mobileNavTimes = document.querySelector('#mobile-nav__times');
+
+menuToggle.onclick = function(){
+    document.querySelector('.mobile-nav').classList.toggle('mobile-nav-active');
+    document.querySelector('.overlay').classList.add('block');
+    document.querySelector('body').classList.add('hidden');
+}
+
+mobileNavTimes.onclick = function() {
+  document.querySelector('.overlay').classList.remove('block');
+  document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
+  document.querySelector('body').classList.remove('hidden');
+}
+
+
+document.querySelector('.overlay').onclick = function() {
+  document.querySelector('.overlay').classList.remove('block');
+  document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
+  document.querySelector('body').classList.remove('hidden');
+}
+
+document.querySelector('.mobile-nav__list').onclick = function() {
+  document.querySelector('.overlay').classList.remove('block');
+  document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
+  document.querySelector('body').classList.remove('hidden');
+}
+
 $('.extra-shelter__carousel').owlCarousel({
   loop:true,
   responsiveClass:true,
@@ -52,4 +81,22 @@ $('.question-text').hide();
 $('.question').on('click', function() {
     $(this).find('.question-text').slideToggle(500);
     console.log($(this));
+});
+
+// ScrollToTop
+
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 1000) {
+          $('#scrollToTop').css('opacity', '1');
+      } else {
+          $('#scrollToTop').css('opacity', '0');
+      }
+      });
+        
+      $('#scrollToTop').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 100);
+      return false;
+  });
 });

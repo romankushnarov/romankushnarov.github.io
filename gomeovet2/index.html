@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- bootstrap -->
     <!-- owl carousel -->
     <link rel="stylesheet" href="plugins/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1-web/css/all.min.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/Roboto/roboto.css">
     <!-- own styles -->
     <link rel="stylesheet" href="css/main.css">
     <title>Гомеовет</title>
   </head>
   <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-auto">
@@ -30,15 +30,32 @@
                 </div>
                 <div class="col-auto d-flex justify-content-between align-items-center">
                     <button class="header-call__btn">Заказать звонок</button>
-                    <div class="header-menu__btn">
+                    <div class="header-menu__btn" id="menuToggle">
                         <div class="header-menu__btn-line"></div>
                     </div>
                 </div>
+                <!-- ------------ MOBILE NAV ------------ -->      
+                <div id="mobileMenuToggle" class="mobile-nav">
+                    <div class="mobile-nav__buttons">
+                        <div id="mobile-nav__times"><i class="fas fa-times"></i></div>
+                        <div class="mobile-nav__list">
+                            <a href="#header" class="mobile-nav__link">Главная</a>
+                            <a href="#support-help" class="mobile-nav__link">Как помочь?</a>
+                            <a href="#support-gift" class="mobile-nav__link">Что подарить?</a>
+                            <a href="#about" class="mobile-nav__link">О нас</a>
+                            <a href="#extra-help" class="mobile-nav__link">Доп помощь</a>
+                            <a href="#extra-shelter" class="mobile-nav__link">Фонды и приюты</a>
+                            <a href="#reports" class="mobile-nav__link">Отчеты</a>
+                            <a href="#home" class="mobile-nav__link">Мы ищем дом</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- // ------------ MOBILE NAV ------------ --> 
             </div>
         </div>
     </header>
 
-    <section class="help">
+    <section class="help" id="help">
         <div class="container">
             <div class="row row-help">
                 <div class="col-lg-5 help-col">
@@ -58,8 +75,8 @@
         </div>
     </section>
 
-    <section class="support">
-        <div class="support-help">
+    <section class="support" id="support">
+        <div class="support-help wow animate__animated animate__fadeInUp" id="support-help">
             <div class="container">
                 <h2 class="support-title">Как я могу <span>помочь?</span></h2>
                 <div class="row support-help__row">
@@ -111,10 +128,10 @@
                 </div>
             </div>
         </div>
-        <div class="support-gift">
+        <div class="support-gift" id="support-gift">
             <div class="container">
                 <h2 class="support-title">Что именно <span>подарить?</span></h2>
-                <div class="row support-gift__row">
+                <div class="row support-gift__row wow animate__animated animate__fadeInLeft">
                     <div class="col-lg-4">
                         <a href="https://gomeovet.ru/catalog1/dog/korma_dla_sobak/" class="support-gift__item">
                             <div class="support-gift__item-img__wrapper">
@@ -146,7 +163,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row support-gift__row">
+                <div class="row support-gift__row wow animate__animated animate__fadeInRight">
                     <div class="col-lg-4 offset-lg-2">
                         <a href="https://gomeovet.ru/catalog1/apteka/protivoparazitarnye-preparaty-insekticidy-i-repellenty/ot_gel_mintov/" class="support-gift__item">
                             <div class="support-gift__item-img__wrapper">
@@ -172,7 +189,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about wow animate__animated animate__fadeIn" id="about">
         <img src="images/cat1.png" alt="" class="about-cat__img">
         <div class="container">
             <div class="about-title">О нас</div>
@@ -223,8 +240,8 @@
         <img src="images/bowl.png" alt="" class="about-bowl__img">
     </section>
 
-    <section class="extra">
-        <div class="extra-help">
+    <section class="extra" id="extra">
+        <div class="extra-help wow animate__animated animate__fadeIn" id="extra-help">
             <div class="container">
                 <h2 class="support-title">Как помочь <span>дополнительно?</span></h2>
                 <div class="row extra-help__row">
@@ -238,7 +255,7 @@
                                     <div class="extra-help__item-text">Если Вы хотите принять участие в деятельности фондов или приютов, свяжитесь пожалуйста с их представителями.</div>
                                     <div class="extra-help__btn-row">
                                         <div class="col-auto extra-help__btn-col">
-                                            <a href="#" class="extra-help__btn">Подробнее</a>
+                                            <a href="#extra-shelter" class="extra-help__btn">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +271,7 @@
                                     <div class="extra-help__item-text">Мы будем постоянно пополнять количество фондов, питомников и приютов, чтобы помочь, как можно большему количеству животных найти здоровье, любовь, заботу и "настоящий дом"</div>
                                     <div class="extra-help__btn-row">
                                         <div class="col-auto extra-help__btn-col">
-                                            <a href="#" class="extra-help__btn">Подробнее</a>
+                                            <a href="#extra-shelter" class="extra-help__btn">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +280,7 @@
                 </div>
             </div>
         </div>
-        <div class="extra-shelter">
+        <div class="extra-shelter wow animate__animated animate__fadeIn" id="extra-shelter">
             <div class="container">
                 <h2 class="support-title">Фонды и приюты</h2>
                 <div class="extra-shelter__carousel-wrapper">
@@ -272,8 +289,8 @@
                             <div class="extra-shelter__item-img__wrapper">
                                 <img src="images/shelter1.jpg" alt="Фонд защиты городских животных" class="extra-shelter__item-img img-fluid">
                             </div>
-                            <div class="extra-shelter__item-text__wrapper">
-                                <i class="fas fa-info-circle"></i>
+                            <div class="extra-shelter__item-text__wrapper" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fa fa-info-circle"></i>
                                 <div class="extra-shelter__item-text">Фонд защиты городских животных</div>
                             </div>
                         </div>
@@ -282,7 +299,7 @@
                                 <img src="images/shelter1.jpg" alt="Фонд защиты городских животных" class="extra-shelter__item-img img-fluid">
                             </div>
                             <div class="extra-shelter__item-text__wrapper">
-                                <i class="fas fa-info-circle"></i>
+                                <i class="fa fa-info-circle"></i>
                                 <div class="extra-shelter__item-text">Фонд защиты городских животных</div>
                             </div>
                         </div>
@@ -291,21 +308,60 @@
                                 <img src="images/shelter1.jpg" alt="Фонд защиты городских животных" class="extra-shelter__item-img img-fluid">
                             </div>
                             <div class="extra-shelter__item-text__wrapper">
-                                <i class="fas fa-info-circle"></i>
+                                <i class="fa fa-info-circle"></i>
                                 <div class="extra-shelter__item-text">Фонд защиты городских животных</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="extra-help__item">
+                                <div class="extra-help-img__wrapper">
+                                    <img src="images/shelter1.jpg" alt="Помочь найти дом" class="extra-help__item-img img-fluid">
+                                </div>
+                                <div class="extra-help-text__wrapper">
+                                    <div class="extra-shelter__item-text__wrapper" data-toggle="modal" data-target="#exampleModal">
+                                        <div class="extra-shelter__row">
+                                            <i class="fa fa-info-circle"></i>
+                                            <div class="extra-shelter__item-text">Фонд защиты городских животных</div>
+                                        </div>
+                                        <div class="extra-help__item-text">Мы организовали работу волонтеров, которые не находятся в группе риска и готовы помочь животным! Если Вы нуждаетесь в такой помощи, напишите или позвоните нам! </div>
+                                        <div class="extra-help__item-text">Если Вы волонтер и готовы помочь, регистрируйтесь!</div>
+                                        <a href="tel:+78003023017" class="footer-contact__item footer-contact__item-link">
+                                            <i class="fa fa-phone-alt"></i>
+                                            <p class="footer-contact__item-inner">+7(800)302-30-17</p>
+                                        </a>
+                                        <div class="footer-contact__item">
+                                            <i class="fa fa-map-marker-alt"></i>
+                                            <p class="footer-contact__item-inner"> г. Москва, Ул. Заморенова 25/5</p>
+                                        </div>
+                                        <a href="mailto:gf_anna@mail.ru" class="footer-contact__item footer-contact__item-link">
+                                            <i class="fas fa-envelope"></i>
+                                            <p class="footer-contact__item-inner footer-contact__item-inner__bold">gf_anna@mail.ru</p>
+                                        </a>
+                                        <a href="https://zoovolonter.info/" class="footer-contact__item footer-contact__item-link">
+                                            <i class="fa fa-phone-alt"></i>
+                                            <p class="footer-contact__item-inner footer-contact__item-inner__bold">https://zoovolonter.info/</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
 
-    <section class="homeAndReports">
+    <section class="homeAndReports wow animate__animated animate__fadeIn" id="homeAndReports">
         <img src="images/dog1.png" alt="" class="dog-img">
         <img src="images/leash1.png" alt="" class="leash-img">
         <div class="container">
-            <div class="home">
+            <div class="home" id="home">
                 <h2 class="support-title">Мы <span>ищем</span> дом...</h2>
                 <div class="home-carousel__wrapper">
                     <div class="home__carousel owl-carousel">
@@ -368,7 +424,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reports">
+            <div class="reports" id="reports">
                 <h2 class="support-title">Отчеты</h2>
                 <div class="row row-reports">
                     <div class="col-md-6">
@@ -381,33 +437,33 @@
                 <div class="reports-carousel__wrapper">
                     <div class="reports-carousel owl-carousel">
                         <div class="reports-item">
-                            <img src="images/report1.jpg" alt="Отчёт" class="report-item__img img-fluid">
+                            <img src="images/report.jpg" alt="Отчёт" class="report-item__img img-fluid">
                             <div class="reports-item__text">
-                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fas fa-globe"></i>Ссылка на документ</a>
+                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fa fa-globe"></i>Ссылка на документ</a>
                             </div>
                         </div>
                         <div class="reports-item">
-                            <img src="images/report1.jpg" alt="Отчёт" class="report-item__img img-fluid">
+                            <img src="images/report.jpg" alt="Отчёт" class="report-item__img img-fluid">
                             <div class="reports-item__text">
-                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fas fa-globe"></i>Ссылка на документ</a>
+                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fa fa-globe"></i>Ссылка на документ</a>
                             </div>
                         </div>
                         <div class="reports-item">
-                            <img src="images/report1.jpg" alt="Отчёт" class="report-item__img img-fluid">
+                            <img src="images/report.jpg" alt="Отчёт" class="report-item__img img-fluid">
                             <div class="reports-item__text">
-                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fas fa-globe"></i>Ссылка на документ</a>
+                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fa fa-globe"></i>Ссылка на документ</a>
                             </div>
                         </div>
                         <div class="reports-item">
-                            <img src="images/report1.jpg" alt="Отчёт" class="report-item__img img-fluid">
+                            <img src="images/report.jpg" alt="Отчёт" class="report-item__img img-fluid">
                             <div class="reports-item__text">
-                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fas fa-globe"></i>Ссылка на документ</a>
+                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fa fa-globe"></i>Ссылка на документ</a>
                             </div>
                         </div>
                         <div class="reports-item">
-                            <img src="images/report1.jpg" alt="Отчёт" class="report-item__img img-fluid">
+                            <img src="images/report.jpg" alt="Отчёт" class="report-item__img img-fluid">
                             <div class="reports-item__text">
-                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fas fa-globe"></i>Ссылка на документ</a>
+                                <a href="https://google.com" target="_blank" class="reports-item__text-link"><i class="fa fa-globe"></i>Ссылка на документ</a>
                             </div>
                         </div>
                     </div>
@@ -417,33 +473,76 @@
         <img src="images/paws1.png" alt="" class="paws-img">
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
-            <h2 class="support-title">Вопросы и <span>ответы</span></h2>
-            <div class="question">
+            <h2 class="support-title wow animate__animated animate__fadeInUp">Вопросы и <span>ответы</span></h2>
+            <div class="question wow animate__animated animate__fadeInLeft">
                 <h4 class="question-title text-uppercase">Я не понял что нужно делать?</h4>
                 <div class="question-text">Нажмите на кнопку «Хочу помочь», выберите товар, который хотите подарить и положите его в корзину, отметьте галочку в корзине «Помощь Животным Без дома», менеджер подтвердит заказ, после чего его можно оплачивать.</div>
             </div>
-            <div class="question">
+            <div class="question wow animate__animated animate__fadeInRight">
                 <h4 class="question-title text-uppercase">Как быть уверенным, что все товары и средства передаются по назначению?</h4>
                 <div class="question-text">Все купленные товары и средства передаются в фонды и приюты строго с фото и видеофиксацией. Ежемесячно мы публикуем видео и фото отчеты о передаче всех перечисленных средств и товаров в фонды и приюты.</div>
             </div>
-            <div class="question">
+            <div class="question wow animate__animated animate__fadeInLeft">
                 <h4 class="question-title text-uppercase">Хочу стать партнером и тоже помогать</h4>
                 <div class="question-text">Напишите нам на почту vetinfo@gomeovet.ru, мы рассмотрим Ваше предложение и обязательно ответим Вам.</div>
             </div>
-            <div class="question">
+            <div class="question wow animate__animated animate__fadeInRight">
                 <h4 class="question-title text-uppercase">Хотим разместить наш фонд или приют под данной акцией</h4>
                 <div class="question-text">Напишите нам на почту vetinfo@gomeovet.ru, расскажите о вашем фонде или приюте, мы обязательно свяжемся с Вами и обсудим детали сотрудничества.</div>
+            </div>
+            <div class="row btn-row justify-content-center wow animate__animated animate__fadeIn">
+                <div class="col-auto">
+                    <a href="https://gomeovet.ru/catalog1/apteka/" class="help-btn">Хочу помочь!</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <footer class="footer wow animate__animated animate__fadeIn" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-nav">
+                    <div class="footer-nav__list">
+                        <a href="#header" class="footer-nav__list-item">Главная</a>
+                        <a href="#support-help" class="footer-nav__list-item">Как помочь?</a>
+                        <a href="#support-gift" class="footer-nav__list-item">Что подарить?</a>
+                        <a href="#about" class="footer-nav__list-item">О нас</a>
+                        <a href="#extra-help" class="footer-nav__list-item">Доп помощь</a>
+                        <a href="#extra-shelter" class="footer-nav__list-item">Фонды и приюты</a>
+                        <a href="#reports" class="footer-nav__list-item">Отчеты</a>
+                        <a href="#home" class="footer-nav__list-item">Мы ищем дом </a>
+                    </div>
+                </div>
+                <a href="https://zoovolonter.info/" class="footer-link">
+                    <img src="images/logo.png" alt="Фонд защиты городских животных" class="footer-link__logo">
+                </a>
+                <div class="footer-contacts">
+                    <a href="tel:+78003023017" class="footer-contact__item footer-contact__item-link">
+                        <i class="fa fa-phone-alt"></i>
+                        <p class="footer-contact__item-inner">+7(800)302-30-17</p>
+                    </a>
+                    <div class="footer-contact__item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p class="footer-contact__item-inner"> г. Москва, Ул. Заморенова 25/5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="scrollToTop"><i class="fa fa-arrow-up"></i></div>
+
+    <div class="overlay"></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- popper is necessary for bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="plugins/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
