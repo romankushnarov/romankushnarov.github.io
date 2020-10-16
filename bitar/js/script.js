@@ -22,3 +22,12 @@ document.querySelector('.overlay').onclick = function() {
     document.querySelector('#mobileMenuToggle').classList.toggle('mobile-nav-active');
     counterMenu++;
 }
+
+
+// ---------------- WORK ----------------
+
+$('.work-text').hide();
+$('.work-item').on('click', function() {
+    $(this).find('.work-text').slideToggle(500);
+    console.log($(this));
+});

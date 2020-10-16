@@ -643,8 +643,8 @@ html {
     overflow-x: hidden;
 }
 
-.extra-shelter .support-title {
-    margin-top: 160px;
+.extra-help {
+    margin-bottom: 160px;
 }
 
 .extra-shelter__carousel {
@@ -796,9 +796,12 @@ html {
 
 .homeAndReports {
     position: relative;
-    padding-bottom: 400px;
-    /* padding: 90px 0 200px; */
-    background-image: url(../images/bottom1.png);
+    
+    padding-bottom: 300px;
+    
+    /* padding-bottom: 400px;
+    background-image: url(../images/bottom1.png); */
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -1042,8 +1045,12 @@ html {
     overflow-x: hidden;
     padding-bottom: 90px;
     position: relative;
-    padding: 200px 0 150px;
-    background-image: url(../images/bg2.png);
+
+    padding: 50px 0 0;
+
+    /* padding: 200px 0 150px;
+    background-image: url(../images/bg2.png); */
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -1325,6 +1332,68 @@ html {
 }
 
 
+/* ----------------- animals-btn -----------------  */
+
+
+.animals-btn {
+    position: fixed;
+    bottom: 20vh;
+    right: 3vw;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 13px 45px;
+    color: #fff;
+    background-color: #1EB4E3;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 7;
+}
+
+.animals-btn::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/sad-dog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -52px;
+    left: 10px;
+    height: 65px;
+    width: 65px;
+    z-index: 8;
+}
+
+.animals-btn::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/sad-cat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -20px;
+    right: -35px;
+    height: 65px;
+    width: 65px;
+    z-index: 8;
+}
+
+.animals-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFB168;
+}
+
+.animals-btn:hover::before  {
+    background-image: url(../images/happy-dog.png);
+    top: -55px;
+    height: 55px;
+    width: 55px;
+}
+
+.animals-btn:hover::after {
+    background-image: url(../images/happy-cat.png);
+    bottom: -20px;
+    width: 55px;
+    height: 67px;
+}
 
 
 
@@ -1607,8 +1676,8 @@ html {
         font-size: 18px;
         line-height: 21px;
     }
-    .extra-shelter .support-title {
-        margin-top: 100px;
+    .extra-help {
+        margin-bottom: 100px;
     }
     .extra-shelter__carousel {
         margin-top: 40px;
@@ -1652,6 +1721,10 @@ html {
         padding: 10px;
         font-size: 18px;
         bottom: 5vh;
+    } 
+    .animals-btn {
+        right: 6vw;
+        bottom: 13vh;
     }
 }
 
@@ -1876,8 +1949,8 @@ html {
     .reports-carousel .owl-prev i {
         font-size: 26px;
     }
-    .extra-shelter .support-title {
-        margin-top: 50px;
+    .extra-help {
+        margin-bottom: 50px;
     }
     .extra-shelter__carousel-wrapper {
         max-width: 90%;
@@ -2002,6 +2075,11 @@ html {
     }
     #mobile-nav__times {
         font-size: 27px;
+    }
+    .animals-btn {
+        position: absolute;
+        bottom: unset;
+        right: 27vw;
     }
 }
  

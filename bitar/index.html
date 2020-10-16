@@ -1,227 +1,246 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- own styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>Битар</title>
-  </head>
-  <body>
 
-    <div class="cover-bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- own styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Битар</title>
+</head>
 
-      <header class="header">
-        <div class="container">
-          <nav class="nav">
-              <a href="/" class="logo-link">
-                <img src="images/bitar-logo.png" alt="Битар" class="logo-img">
-              </a>
-              <div class="nav-list">
-                <a href="#" class="nav-item">ГЛАВНАЯ</a>
-                <a href="#" class="nav-item">УСЛУГИ</a>
-                <a href="#" class="nav-item">ГЕОГРАФИЯ</a>
-                <a href="#" class="nav-item">ВАКАНСИИ</a>
-                <a href="#" class="nav-item">КОНТАКТЫ</a>
-                <a href="tel:+78000000000" class="nav-item nav-tel">
-                  <p class='nav-tel__number'>+7 (XXX) XXX XX XX</p>
-                  <p class="nav-tel__text">Вам перезвонить?</p>
-                </a>
-              </div>
-              <!-- ------------ MOBILE BUTTON ------------ -->
-              <div id="menuToggle" class="mobile-icon">
-                  <div class="mobile-line"></div>
-              </div>
-              <!-- // ------------ MOBILE BUTTON ------------ -->
-              <!-- ------------ MOBILE NAV ------------ -->      
-              <div id="mobileMenuToggle" class="mobile-nav">
-                  <div class="mobile-nav__buttons">
-                      <ul class="mobile-nav__list">
-                          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ГЛАВНАЯ</a></li>
-                          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">УСЛУГИ</a></li>
-                          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ГЕОГРАФИЯ</a></li>
-                          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ВАКАНСИИ</a></li>
-                          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">КОНТАКТЫ</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- // ------------ MOBILE NAV ------------ -->  
-          </nav>
-        </div>
-      </header>
+<body>
 
-      <section class="order">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 order-col">
-              <h1 class="order-title">ПЕРЕВОЗКИ ПО ВСЕЙ РОССИИ</h1>
-              <div class="order-line"></div>
-              <div class="order-text">РЕФРИЖЕРАТОРАМИ И ТЕНТОВАННЫМИ АВТОМОБИЛЯМИ</div>
+  <div class="cover-bg">
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="/" class="logo-link">
+            <img src="images/bitar-logo.png" alt="Битар" class="logo-img">
+          </a>
+          <div class="nav-list">
+            <a href="#" class="nav-item">ГЛАВНАЯ</a>
+            <button type="button" class="dropdown-toggle nav-item nav-item__btn" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Услуги
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Сервис</a>
+              <a class="dropdown-item" href="#">Ответственное хранение</a>
             </div>
-            <div class="col-lg-auto order-col">
-              <div class="order-form">
-                <h2 class="order-subtitle">Транспортировка</h2>
-                <p class="order-subtext">ЗАКАЗАТЬ ТРАНСПОРТИРОВКУ</p>
-              </div>
+            <a href="#" class="nav-item">ВАКАНСИИ</a>
+            <a href="#" class="nav-item">КОНТАКТЫ</a>
+            <a href="tel:+78000000000" class="nav-item nav-tel">
+              <p class='nav-tel__number'>+7 (XXX) XXX XX XX</p>
+              <p class="nav-tel__text">Вам перезвонить?</p>
+            </a>
+          </div>
+          <!-- ------------ MOBILE BUTTON ------------ -->
+          <div id="menuToggle" class="mobile-icon">
+            <div class="mobile-line"></div>
+          </div>
+          <!-- // ------------ MOBILE BUTTON ------------ -->
+          <!-- ------------ MOBILE NAV ------------ -->
+          <div id="mobileMenuToggle" class="mobile-nav">
+            <div class="mobile-nav__buttons">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ГЛАВНАЯ</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">УСЛУГИ</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ГЕОГРАФИЯ</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">ВАКАНСИИ</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">КОНТАКТЫ</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
+          <!-- // ------------ MOBILE NAV ------------ -->
+        </nav>
+      </div>
+    </header>
 
-    </div>
-
-    <section class="about">
+    <section class="order">
       <div class="container">
-        <h3 class="about-title">ПОЧЕМУ ВЫ МОЖЕТЕ ДОВЕРИТЬ НАМ СВОЙ ГРУЗ?</h3>
-        <div class="row d-flex justify-content-center">
-          <div class="col-auto">
+        <div class="row">
+          <div class="col-lg-5 order-col">
+            <h1 class="order-title">ПЕРЕВОЗКИ ПО ВСЕЙ РОССИИ</h1>
             <div class="order-line"></div>
+            <div class="order-text">РЕФРИЖЕРАТОРАМИ И ТЕНТОВАННЫМИ АВТОМОБИЛЯМИ</div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about1.png" alt="Более 300 автомобилей" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">Более 300 автомобилей</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about2.png" alt="10 лет успешной работы" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">10 лет успешной работы</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about3.png" alt="Более 500 сотрудников" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">Более 500 сотрудников</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about4.png" alt="NEW Автопарк" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">NEW Автопарк</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about5.png" alt="30.000 городов" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">30.000 городов</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-12">
-            <div class="about-item">
-              <img src="images/about7.png" alt="Материальная ответственность" class="about-item__img">
-              <div class="about-item__inner">
-                <h4 class="item__inner-title">Материальная ответственность</h4>
-                <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. </p>
-              </div>
+          <div class="col-lg-auto order-col">
+            <div class="order-form">
+              <h2 class="order-subtitle">Транспортировка</h2>
+              <p class="order-subtext">ЗАКАЗАТЬ ТРАНСПОРТИРОВКУ</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="carpark">
-      <div class="container">
-        <h3 class="carpark-title">НАШ АВТОПАРК</h3>
-        <div class="row carpark-row">
-          <div class="col-sm-6 order-2 order-sm-1">
-            <div class="carpark-item">
-              <h4 class="carpark-item__title">РЕФРИДЖИРАТОРЫ</h4>
-              <h4 class="carpark-item__title"><span>[86М3 / 20Т]</span></h4>
-              <p class="carpark-item__text">Подходят для продуктов, требующих определенного температурного режима:</p>
-              <div class="carpark-item__text">— мясо</div>
-              <div class="carpark-item__text">— молочная продукция</div>
-              <div class="carpark-item__text">— кондитерские изделия</div>
-              <div class="carpark-item__text">— овощи/фрукты</div>
-              <div class="row carpark-item__btn-row">
-                <div class="col-auto">
-                  <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
-                </div>
-              </div>
+  </div>
+
+  <section class="about">
+    <div class="container">
+      <h3 class="about-title">ПОЧЕМУ ВЫ МОЖЕТЕ ДОВЕРИТЬ НАМ СВОЙ ГРУЗ?</h3>
+      <div class="row d-flex justify-content-center">
+        <div class="col-auto">
+          <div class="order-line"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about1.png" alt="Более 300 автомобилей" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">Более 300 автомобилей</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
             </div>
           </div>
-          <div class="col-sm-6 order-1 order-md-2">
-            <img src="images/trailer1.png" alt="НАШ АВТОПАРК" class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
-          </div>
         </div>
-        <div class="row">
-          <div class="col-auto carpark-line-col">
-            <div class="carpark-line"></div>
-          </div>
-        </div>
-        <div class="row carpark-row">
-          <div class="col-sm-6 order-2 order-sm-1">
-            <div class="carpark-item">
-              <h4 class="carpark-item__title">ТЕНТОВАННЫЕ АВТОМОБИЛИ</h4>
-              <h4 class="carpark-item__title"><span>[92М3 / 20Т]</span></h4>
-              <p class="carpark-item__text">Подходят для большого спектра задач:</p>
-              <div class="carpark-item__text">— стройматериалы и металлоконструкции</div>
-              <div class="carpark-item__text">— товары народного потребления</div>
-              <div class="carpark-item__text">— мебель</div>
-              <div class="carpark-item__text">— техника и запчасти</div>
-              <div class="row carpark-item__btn-row">
-                <div class="col-auto">
-                  <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
-                </div>
-              </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about2.png" alt="10 лет успешной работы" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">10 лет успешной работы</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
             </div>
           </div>
-          <div class="col-sm-6 order-1 order-md-2">
-            <img src="images/trailer1.png" alt="НАШ АВТОПАРК" class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
-          </div>
         </div>
-        <div class="row">
-          <div class="col-auto carpark-line-col">
-            <div class="carpark-line"></div>
-          </div>
-        </div>
-        <div class="row carpark-row">
-          <div class="col-sm-6 order-2 order-sm-1">
-            <div class="carpark-item">
-              <h4 class="carpark-item__title">ТРАЛ</h4>
-              <h4 class="carpark-item__title"><span>[92М3 / 20Т]</span></h4>
-              <p class="carpark-item__text">Подходят для большого спектра задач:</p>
-              <div class="carpark-item__text">— стройматериалы и металлоконструкции</div>
-              <div class="carpark-item__text">— товары народного потребления</div>
-              <div class="carpark-item__text">— мебель</div>
-              <div class="carpark-item__text">— техника и запчасти</div>
-              <div class="row carpark-item__btn-row">
-                <div class="col-auto">
-                  <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
-                </div>
-              </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about3.png" alt="Более 500 сотрудников" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">Более 500 сотрудников</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
             </div>
           </div>
-          <div class="col-sm-6 order-1 order-md-2">
-            <img src="images/trailer1.png" alt="НАШ АВТОПАРК" class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about4.png" alt="NEW Автопарк" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">NEW Автопарк</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about5.png" alt="30.000 городов" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">30.000 городов</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="about-item">
+            <img src="images/about7.png" alt="Материальная ответственность" class="about-item__img">
+            <div class="about-item__inner">
+              <h4 class="item__inner-title">Материальная ответственность</h4>
+              <p class="item__inner-text">Повседневная практика показывает, что укрепление и развитие структуры в
+                значительной степени обуславливает создание систем массового участия. </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- <section class="calc">
+  <section class="carpark">
+    <div class="container">
+      <h3 class="carpark-title">НАШ АВТОПАРК</h3>
+      <div class="row carpark-row">
+        <div class="col-sm-6 order-2 order-sm-1">
+          <div class="carpark-item">
+            <h4 class="carpark-item__title">РЕФРИДЖИРАТОРЫ</h4>
+            <h4 class="carpark-item__title"><span>[86М3 / 20Т]</span></h4>
+            <p class="carpark-item__text">Подходят для продуктов, требующих определенного температурного режима:</p>
+            <div class="carpark-item__text">— мясо</div>
+            <div class="carpark-item__text">— молочная продукция</div>
+            <div class="carpark-item__text">— кондитерские изделия</div>
+            <div class="carpark-item__text">— овощи/фрукты</div>
+            <div class="row carpark-item__btn-row">
+              <div class="col-auto">
+                <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 order-1 order-md-2">
+          <img src="images/trailer1.png" alt="НАШ АВТОПАРК"
+            class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-auto carpark-line-col">
+          <div class="carpark-line"></div>
+        </div>
+      </div>
+      <div class="row carpark-row">
+        <div class="col-sm-6 order-2 order-sm-1">
+          <div class="carpark-item">
+            <h4 class="carpark-item__title">ТЕНТОВАННЫЕ АВТОМОБИЛИ</h4>
+            <h4 class="carpark-item__title"><span>[92М3 / 20Т]</span></h4>
+            <p class="carpark-item__text">Подходят для большого спектра задач:</p>
+            <div class="carpark-item__text">— стройматериалы и металлоконструкции</div>
+            <div class="carpark-item__text">— товары народного потребления</div>
+            <div class="carpark-item__text">— мебель</div>
+            <div class="carpark-item__text">— техника и запчасти</div>
+            <div class="row carpark-item__btn-row">
+              <div class="col-auto">
+                <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 order-1 order-md-2">
+          <img src="images/trailer1.png" alt="НАШ АВТОПАРК"
+            class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-auto carpark-line-col">
+          <div class="carpark-line"></div>
+        </div>
+      </div>
+      <div class="row carpark-row">
+        <div class="col-sm-6 order-2 order-sm-1">
+          <div class="carpark-item">
+            <h4 class="carpark-item__title">ТРАЛ</h4>
+            <h4 class="carpark-item__title"><span>[92М3 / 20Т]</span></h4>
+            <p class="carpark-item__text">Подходят для большого спектра задач:</p>
+            <div class="carpark-item__text">— стройматериалы и металлоконструкции</div>
+            <div class="carpark-item__text">— товары народного потребления</div>
+            <div class="carpark-item__text">— мебель</div>
+            <div class="carpark-item__text">— техника и запчасти</div>
+            <div class="row carpark-item__btn-row">
+              <div class="col-auto">
+                <div class="carpark-item__btn">ОСТАВИТЬ ЗАЯВКУ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 order-1 order-md-2">
+          <img src="images/trailer1.png" alt="НАШ АВТОПАРК"
+            class="carpark-img img-fluid wow animate__animated animate__fadeInRight">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="calc">
       <div class="container">
         <div class="select-wrapper">
           <select name="select" class='form-select'> 
@@ -274,103 +293,235 @@
       </div>
     </section> -->
 
-    <section class="steps">
-      <div class="container">
-        <div class="steps-row">
-          <div class="steps-item">
-            <i class="fas fa-flag"></i>
-            <h4 class="steps-title"><span>01.</span> Заявка</h4>
-            <p class="steps-text">Вы звоните нам или оставляете заявку на сайте</p>
-          </div>
-          <img src="images/arr-right.svg" alt="" class="steps-arrow">
-          <div class="steps-item">
-            <i class="fas fa-flag"></i>
-            <h4 class="steps-title"><span>02.</span> Выезд</h4>
-            <p class="steps-text">Срочный выезд специалиста или курьерской службы к Вам</p>
-          </div>
-          <img src="images/arr-right.svg" alt="" class="steps-arrow">
-          <div class="steps-item">
-            <i class="fas fa-flag"></i>
-            <h4 class="steps-title"><span>03.</span> Заправка</h4>
-            <p class="steps-text">Ремонт, заправка у клиента или доставка в нашу мастерскую</p>
-          </div>
+  <section class="steps">
+    <div class="container">
+      <div class="steps-row">
+        <div class="steps-item">
+          <i class="fas fa-flag"></i>
+          <h4 class="steps-title"><span>01.</span> Заявка</h4>
+          <p class="steps-text">Вы звоните нам или оставляете заявку на сайте</p>
         </div>
-        <div class="steps-row steps-row-2">
-          <div class="steps-item">
-            <i class="fas fa-flag"></i>
-            <h4 class="steps-title"><span>05.</span> Доставка</h4>
-            <p class="steps-text">Доставляем картриджи или принтеры</p>
-          </div>
-          <img src="images/arr-left.svg" alt="" class="steps-arrow">
-          <div class="steps-item">
-            <i class="fas fa-flag"></i>
-            <h4 class="steps-title"><span>04.</span> Всё работает</h4>
-            <p class="steps-text">Вы оплачиваете ремонт и получаете гарантийный договор</p>
-          </div>
-          <img src="images/arr-angle.svg" alt="" class="steps-arrow steps-arrow__angle">
+        <img src="images/arr-right.svg" alt="" class="steps-arrow">
+        <div class="steps-item">
+          <i class="fas fa-flag"></i>
+          <h4 class="steps-title"><span>02.</span> Выезд</h4>
+          <p class="steps-text">Срочный выезд специалиста или курьерской службы к Вам</p>
+        </div>
+        <img src="images/arr-right.svg" alt="" class="steps-arrow">
+        <div class="steps-item">
+          <i class="fas fa-flag"></i>
+          <h4 class="steps-title"><span>03.</span> Заправка</h4>
+          <p class="steps-text">Ремонт, заправка у клиента или доставка в нашу мастерскую</p>
         </div>
       </div>
-    </section>
-
-    <section class="img-map">
-      <div class="container">
-        <h3 class="img-map__title">ГЕОГРАФИЯ ПЕРЕВОЗОК</h3>
-      <img src="images/map-bitar.png" alt="" class="img-map__inner img-fluid">
-      </div>
-    </section>
-
-    <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.7657360579115!2d37.87946591583004!3d47.96025397147316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e093cc010990d7%3A0x615ac6e4d15c57f8!2z0YPQuy4g0J7QutGC0Y_QsdGA0Y8sINCU0L7QvdC10YbQuiwg0JTQvtC90LXRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwgODMwMDA!5e0!3m2!1sru!2sua!4v1602185973127!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="container">
-        <div class="map__form-wrapper">
-          <h4 class="map__form-title">Оставьте свой телефон и мы обязательно перезвоним</h4>
+      <div class="steps-row steps-row-2">
+        <div class="steps-item">
+          <i class="fas fa-flag"></i>
+          <h4 class="steps-title"><span>05.</span> Доставка</h4>
+          <p class="steps-text">Доставляем картриджи или принтеры</p>
         </div>
+        <img src="images/arr-left.svg" alt="" class="steps-arrow">
+        <div class="steps-item">
+          <i class="fas fa-flag"></i>
+          <h4 class="steps-title"><span>04.</span> Всё работает</h4>
+          <p class="steps-text">Вы оплачиваете ремонт и получаете гарантийный договор</p>
+        </div>
+        <img src="images/arr-angle.svg" alt="" class="steps-arrow steps-arrow__angle">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="/" class="footer-logo">
-              <img src="images/bitar-logo.png" alt="Битар" class="footer-logo__img img-fluid">
-              <p class="footer-text">Обратиться к нам можно в удобное для Вас время. Вы всегда сможете получить необходимые консультации и помощь специалистов. Сотрудники помогут вам с оформлением заказа, ответят на все возникшие вопросы и выслушают предложения.</p>
-              <p class="footer-copyright">© ТРАНСПОРТНАЯ КОМПАНИЯ BITAR, 2020.</p>
-            </a>
+  <section class="img-map">
+    <div class="container">
+      <h3 class="carpark-title">ГЕОГРАФИЯ ПЕРЕВОЗОК</h3>
+      <div class="map-row">
+          <img src="images/map-bitar.png" alt="" class="img-map__inner img-fluid">
+        </div>
+    </div>
+  </section>
+
+  <div class="work">
+    <div class="container">
+      <div class="work-wrapper">
+        <h2 class="carpark-title">Требуются:</h2>
+
+        <div class="work-item">
+          <h4 class="work-title text-uppercase">Водитель - экспедитор</h4>
+          <div class="work-text">
+            <div class="work-text__inner"><span>Обязанности:</span> - грузоперевозки по территории России</div>
+            <div class="work-text__inner"><span>Требования:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">наличие водительского удостоверения категории Е;</li>
+              <li class="work-list__item">обязателен опыт работы на грузовиках с прицепом от 3-х лет, желательно на еврофурах;</li>
+              <li class="work-list__item">уверенное управление грузовым транспортом;</li>
+              <li class="work-list__item">отличное знание ПДД.</li>
+            </ul>
+            <div class="work-text__inner"><span>Условия:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">оформление по ТК РФ;</li>
+              <li class="work-list__item">своевременная и стабильная оплата труда;</li>
+              <li class="work-list__item">оплата сотовой связи;</li>
+              <li class="work-list__item">перевозки по территории России;</li>
+              <li class="work-list__item">иномарки в хорошем состоянии.</li>
+            </ul>
+            <div class="work-text__inner"><span>Тип занятости:</span> - полная занятость, сменный график</div>
           </div>
-          <div class="col-md-6 footer-items-col">
-            <a href="tel:+70000000000" class="footer-item">
-              <div class="footer-item__icon">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <p class="footer-text">+ 7 (XXX) XXX-XX-XX</p>
-            </a>
-            <div class="footer-item">
-              <div class="footer-item__icon">
-                <i class="fas fa-map-pin"></i>
-              </div>
-              <p class="footer-text">Адрес, улица, дома 123</p>
+        </div>
+
+        <div class="work-item">
+          <h4 class="work-title text-uppercase">Cпециалист по транспортной логистике</h4>
+          <div class="work-text">
+            <div class="work-text__inner">Крупная транспортная компания, предлагающая профессиональное обслуживание в организации междугородных перевозок грузов на территории РФ и СНГ и зарекомендованная как надежный поставщик транспортных услуг, открывает вакансию специалист по транспортной логистике.</div>
+            <div class="work-text__inner">Если вы умеете работать с большим объемом информации, у Вас есть опыт ведения переговоров и заключения успешных контрактов, Вы умеете самостоятельно решать сложные задачи, Вы активны, инициативны и всегда добиваетесь высоких результатов, тогда Вы именно тот, кто нужен нам!</div>
+            <div class="work-text__inner"><span>Вам нужно будет:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">осуществлять поиск клиентов и вести переговоры по заключению договоров на перевозку;</li>
+              <li class="work-list__item">определять и согласовывать договорные тарифы;</li>
+              <li class="work-list__item">анализировать информацию о платежеспособности и надежности клиентов, вести учет дебиторской задолженности за перевозку грузов;</li>
+              <li class="work-list__item">вести рабочую и отчетную документацию в соответствии с требованиями компании</li>
+            </ul>
+            <div class="work-text__inner"><span>Мы предлагаем:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">График работы 5/2 с 8.00-17.00</li>
+              <li class="work-list__item">Оформление по ТК РФ, социальный пакет</li>
+              <li class="work-list__item">Компенсация мобильной связи</li>
+              <li class="work-list__item">Полная занятость</li>
+              <li class="work-list__item">Приветливый и дружный коллектив</li>
+              <li class="work-list__item">Адекватное, лояльное руководство</li>
+            </ul>
+            <div class="work-text__inner">Мы гарантируем Вам сложную, напряженную и очень интересную работу. Опыт работы торговым представителем, менеджером активных продаж, высшее образование и знание 1С будут Вашим преимуществом. Мы ищем кандидатов на долгосрочную перспективу.</div>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h4 class="work-title text-uppercase">Менеджер по подбору персонала</h4>
+          <div class="work-text">
+            <div class="work-text__inner">Требуемый опыт работы: 3–6 лет</div>
+            <div class="work-text__inner">Полная занятость, полный день</div>
+            <div class="work-text__inner"><span>Обязанности:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">Подбор водителей категории "Е" на всей территории РФ;</li>
+              <li class="work-list__item">Размещение вакансии в различных источниках, анализ эффективности размещения;</li>
+              <li class="work-list__item">Ведение кандидатов на всех этапах согласований;</li>
+              <li class="work-list__item">Анализ причины увольнения водителей.</li>
+            </ul>
+            <div class="work-text__inner"><span>Требования:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">Опыт работы в рекрутинге, преимущественно в транспортной компании;</li>
+              <li class="work-list__item">Грамотная речь;</li>
+              <li class="work-list__item">Аккуратность, ответственность.</li>
+            </ul>
+            <div class="work-text__inner"><span>Мы предлагаем:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">График работы 5/2 с 8.00-17.00</li>
+              <li class="work-list__item">Оформление по ТК РФ, социальный пакет</li>
+              <li class="work-list__item">Компенсация мобильной связи</li>
+              <li class="work-list__item">Офис в ТЦ Палитра (49А)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h4 class="work-title text-uppercase">Юрисконсульт</h4>
+          <div class="work-text">
+            <div class="work-text__inner"><span>Обязанности:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">Договорная работа, согласование договоров (ТО и ремонт автомобилей, закупка и продажа ТС и запчастей и т.д., выполнение услуг грузоперевозок)</li>
+              <li class="work-list__item">Работа с контрагентами по взысканию дебиторской задолженности;</li>
+              <li class="work-list__item">Решение корпоративных вопросов, в частности регистрация ООО, ИП и т.д.;</li>
+              <li class="work-list__item">Подготовка документов по поручению ведущего юрисконсульта;</li>
+              <li class="work-list__item">Деловая переписка с контрагентами (составление, претензий, информационные письма, уведомления и т.д.);</li>
+              <li class="work-list__item">Работа с государственными органами (ответы на запросы, предоставление необходимых документов, составление запросов);</li>
+              <li class="work-list__item">Архивирование рабочей документации (сканирование, сортировка, учет);</li>
+              <li class="work-list__item">Сбор необходимых документов для процессуальных действий (восстановление документов, оформление необходимых документов);</li>
+              <li class="work-list__item">Общение с контрагентами</li>
+            </ul>
+            <div class="work-text__inner"><span>Требования:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">опыт работы от 1 года;</li>
+              <li class="work-list__item">высшее или среднее профессиональное образование;</li>
+            </ul>
+            <div class="work-text__inner"><span>Условия:</span></div>
+            <ul class="work-list">
+              <li class="work-list__item">график работы 5/2 ( с 8.00 до 17.00);</li>
+              <li class="work-list__item">полный соц. пакет;</li>
+              <li class="work-list__item">корпоративная сотовая связь;</li>
+              <li class="work-list__item">оформление по ТК РФ;</li>
+              <li class="work-list__item">офис в центре города (пр. Мира 49А)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.7657360579115!2d37.87946591583004!3d47.96025397147316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e093cc010990d7%3A0x615ac6e4d15c57f8!2z0YPQuy4g0J7QutGC0Y_QsdGA0Y8sINCU0L7QvdC10YbQuiwg0JTQvtC90LXRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwgODMwMDA!5e0!3m2!1sru!2sua!4v1602185973127!5m2!1sru!2sua"
+      width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+    <div class="container">
+      <div class="map__form-wrapper">
+        <h4 class="map__form-title">Оставьте свой телефон и мы обязательно перезвоним</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/" class="footer-logo">
+            <img src="images/bitar-logo.png" alt="Битар" class="footer-logo__img img-fluid">
+            <p class="footer-text">Обратиться к нам можно в удобное для Вас время. Вы всегда сможете получить
+              необходимые консультации и помощь специалистов. Сотрудники помогут вам с оформлением заказа, ответят на
+              все возникшие вопросы и выслушают предложения.</p>
+            <p class="footer-copyright">© ТРАНСПОРТНАЯ КОМПАНИЯ BITAR, 2020.</p>
+          </a>
+        </div>
+        <div class="col-md-6 footer-items-col">
+          <a href="tel:+70000000000" class="footer-item">
+            <div class="footer-item__icon">
+              <i class="fas fa-phone-alt"></i>
             </div>
-            <a href="mailto:tkbitar@gmail.com" class="footer-item">
-              <div class="footer-item__icon">
-                <i class="far fa-envelope"></i>
-              </div>
-              <p class="footer-text">tkbitar@gmail.com</p>
-            </a>
+            <p class="footer-text">+ 7 (XXX) XXX-XX-XX</p>
+          </a>
+          <div class="footer-item">
+            <div class="footer-item__icon">
+              <i class="fas fa-map-pin"></i>
+            </div>
+            <p class="footer-text">Адрес, улица, дома 123</p>
           </div>
+          <a href="mailto:tkbitar@gmail.com" class="footer-item">
+            <div class="footer-item__icon">
+              <i class="far fa-envelope"></i>
+            </div>
+            <p class="footer-text">tkbitar@gmail.com</p>
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="js/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

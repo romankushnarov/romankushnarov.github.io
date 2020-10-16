@@ -123,6 +123,27 @@ table {
 	margin-right: 0;
 }
 
+.nav-item__btn {
+	padding: 0 0 5px 0;
+	border-radius: unset;
+	border: unset;
+	-webkit-transition: none;
+	transition: none;
+	background: transparent;
+}
+
+.nav-item__btn:hover {
+	padding-bottom: 4px;
+}
+
+.nav-item__btn:focus {
+	outline: none;
+}
+
+.nav-list .dropdown-item {
+	padding: 10px;
+}
+
 .nav-tel {
 	text-align: center;
 }
@@ -1194,6 +1215,20 @@ table {
 	padding: 90px 5vw;
 }
 
+.map-row {
+	display: flex;
+	justify-content: center;
+}
+
+.map-col {
+	display: flex;
+	justify-content: center;
+}
+
+.img-map__inner {
+	width: 75%;
+}
+
 .img-map__title {
 	font-weight: 600;
 	font-size: 23px;
@@ -1213,5 +1248,88 @@ table {
 @media(max-width: 576px) {
 	.img-map {
 		padding: 40px 5vw;
+	}
+	.img-map__inner {
+		width: 100%;
+	}
+}
+
+.work {
+	padding: 90px 0;
+}
+
+.work-wrapper {
+	max-width: 800px;
+}
+
+.work-item {
+    margin-bottom: 15px;
+}
+
+.work-title {
+    cursor: pointer;
+    background: #151515;
+    padding: 15px 15px 15px 25px;
+    color: #fff;
+    position: relative;
+}
+
+.work-title::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.work-text {
+	padding: 10px 25px;
+	border: 1px solid #222222;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000;
+	/* margin-top: 20px; */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.work-text__inner {
+	padding: 10px 0;
+}
+
+.work-text__inner span {
+	font-weight: bold;
+}
+
+.work-list__item {
+	margin-left: 50px;
+	position: relative;
+	padding: 7px 0;
+}
+
+.work-list__item::before {
+	position: absolute;
+	content: "";
+	background-color: #006db7;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	top: 10px;
+	left: -20px;
+}
+
+@media(max-width: 576px) {
+	.work-text__inner {
+		padding: 6px 0;
+	}
+	.work-list__item {
+		padding: 5px 0;
+	}
+	.work-text {
+		padding: 10px 18px;
+		font-size: 16px;
+    	line-height: 21px;
 	}
 }
