@@ -147,6 +147,10 @@ table {
   margin: 25px 0;
 }
 
+.info-img {
+  height: unset;
+}
+
 .about__security {
   display: flex;
   justify-content: space-between;
