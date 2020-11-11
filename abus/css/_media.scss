@@ -1,0 +1,213 @@
+@media(max-width: 1440px) {
+    .base-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .main__inner {
+        padding: 45px 0 110px;
+        &-title {
+            font-size: 34px;
+            line-height: 40px;
+            margin-bottom: 55px;
+        }
+        &-item {
+            margin-bottom: 30px;
+            &__text {
+                
+            }
+        }
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .info-text {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    .about-wrapper {
+        padding: 80px 60px;
+    }
+    .about__security-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .about-inner__wrapper-title {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .size-img {
+        max-width: 700px;
+    }
+    .shop {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width: 1200px) {
+    .main__inner-img {
+        max-width: 80%;
+    }
+    .nav__item {
+        display: none;
+    }
+    .main__inner-title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 40px;
+    }
+    .main__inner-item__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 40px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .info, .size {
+        padding: 40px 0 40px;
+    }
+    .about-wrapper {
+        padding: 55px 50px;
+    }
+    .size-img {
+        max-width: 600px;
+    }
+    .compare {
+        &-tr {
+
+        }
+        &-th {
+            font-size: 17px;
+            line-height: 23px;
+        }
+        &-td {
+            padding: 12px 16px;
+            font-size: 16px;
+            line-height: 20px;
+            &:first-child {
+                font-size: 17px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .main__inner {
+        padding: 20px 0 65px;
+        &-img {
+            max-width: 90%;
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        &-item__text {
+            font-size: 16px;
+            line-height: 22px;
+            margin-left: 22px;
+        }
+    }
+    .section-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .info__col-img {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .about-inner__wrapper {
+        margin: 30px auto 0;
+    }
+    .about-inner__wrapper-text {
+        text-align: center;
+    }
+    .about-inner__wrapper-notitle {
+        .about-inner__wrapper-text {
+            margin-top: 0;
+        }
+    }
+    .shop {
+        padding: 60px 0 10px;
+        &__item {
+            width: 85%;
+            margin: 0 auto 50px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        padding-bottom: 0;
+    }
+    .main__inner-img {
+        max-width: 45%;
+        margin: 0 auto;
+    }
+    .main__inner-col__img {
+        @include base-flex;
+    }
+    .size-img {
+        max-width: 500px;
+    }
+    .main__inner-title {
+        text-align: center;
+        margin: 20px auto 30px;
+    }
+    .main__inner-item {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(5%);
+        max-width: 265px;
+    }
+    .shop__item {
+        width: 45%;
+    }
+    .compare {
+        padding: 40px 0;
+        overflow-x: scroll;
+        &-tr {
+
+        }
+        &-th {
+            padding: 10px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &-td {
+            font-size: 14px;
+            line-height: 16px;
+            &:first-child {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .header {
+        padding: 20px 0;
+    }
+    .header-logo__img {
+        max-width: 130px;
+    }
+    .main__inner-img {
+        max-width: 65%;
+    }
+    .info, .size {
+        padding: 40px 0 20px;
+    }
+    .about-wrapper {
+        padding: 40px 30px;
+    }
+    .size-img {
+        max-width: 300px;
+    }
+    .shop__item {
+        width: 90%;
+    }
+}
