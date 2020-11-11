@@ -83,7 +83,7 @@ html {
 }
 
 .logo-img {
-
+    margin-right: 15px;
 }
 
 .header-call__btn {
@@ -97,6 +97,7 @@ html {
     margin-right: 30px;
     background: transparent;
     transition: 0.2s all ease-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .header-call__btn:hover {
@@ -108,6 +109,7 @@ html {
     outline: none;
     border-color: #FFB168;
     color: #FFB168;
+    box-shadow: none;
 }
 
 .header-menu__btn {
@@ -116,6 +118,11 @@ html {
     width: 40px;
     height: 40px;
     position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-menu__btn:focus {
+    box-shadow: none;
 }
 
 .header-menu__btn-line {
@@ -211,6 +218,7 @@ html {
 .help-btn:focus {
     outline: none;
     background-color: #FFB168;
+    box-shadow: none;
 }
 
 .help-subbtn {
@@ -625,6 +633,7 @@ html {
     border-radius: 30px;
     padding: 8px 50px;
     transition: 0.2s all ease-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .extra-help__btn:hover {
@@ -637,6 +646,7 @@ html {
     outline: none;
     border-color: #FFB168;
     color: #FFB168;
+    box-shadow: none;
 }
 
 .extra-shelter {
@@ -1540,13 +1550,22 @@ html {
 
 @media(max-width: 992px) {
     .logo-img {
-        width: 350px;
+        width: 145px;
     }
     .help .help-col{
         text-align: center;
     }
     .row-help-center {
         justify-content: center;
+    }
+    .header-call__btn {
+        padding: 5px 20px;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .header-menu__btn {
+        width: 35px;
+        height: 35px;
     }
     .col-help-between {
         flex-direction: row !important;
@@ -1760,7 +1779,7 @@ html {
         padding-top: 5px;
     }
     .logo-img {
-        width: 70vw;
+        width: 32vw;
     }
     .header-menu__btn {
         width: 30px;
@@ -2088,7 +2107,7 @@ html {
         padding-bottom: 40px;
     }
     .logo-img {
-        width: 65vw;
+        width: 30vw;
     }
     .help-title, .support-title {
         font-size: 30px;
