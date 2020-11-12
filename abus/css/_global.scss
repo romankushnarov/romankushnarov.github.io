@@ -28,6 +28,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     overflow-x: hidden;
 	line-height: 1;
@@ -75,4 +82,12 @@ table {
     text-transform: uppercase;
     margin-bottom: 50px;
     color: $base-color;
+}
+
+.block {
+    display: block !important; 
+}
+
+.hidden {
+    overflow: hidden !important;
 }

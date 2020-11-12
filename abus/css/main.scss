@@ -2,8 +2,22 @@
 @import "_global.scss";
 
 
+.overlay {
+	display: none;
+	height: 110vh;
+	width: 100vw;
+	background-color: rgba(#000, 0.4);
+	position: absolute;
+	z-index: 3;
+}
+
+
 // -------------- main --------------
 
+
+.main {
+	overflow-x: hidden;
+}
 
 .header {
 	padding: 30px 0;
@@ -35,6 +49,121 @@
 			border-bottom: 1px solid #fff;
 		}
 	}
+	/* <!-- ------------ MOBILE BUTTON ------------ --> */
+
+
+	.mobile-icon {
+		z-index: 19;
+		display: none;
+		position: relative;
+		height: 30px;
+	}
+
+	@media(max-width: 1200px){
+		.mobile-icon{
+			display: flex;
+			height: 30px;
+			margin-right: 20px;
+		}
+	}
+
+	.mobile-line {
+		position: relative;
+		top: 12px;
+		width: 30px;
+		height: 5px;
+		background-color: #fff;
+		transition: all 0.3s ease-in;
+	}
+
+	.mobile-line::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		top: -10px;
+		left: 0px;
+		height: 5px;
+		background-color: #fff;
+		transition: transform 0.2s ease-in, top 0.2s ease-in 0.2s;
+	}
+
+	.mobile-line::before {
+		content: '';
+		position: absolute;
+		width: 30px;
+		top: 10px;
+		left: 0px;
+		height: 5px;
+		background-color: #fff;
+		transition: transform 0.2s ease-in, top 0.2s ease-in 0.2s;
+	}
+
+	.mobile-line.mobile-line-active{
+		background-color: transparent;
+		transition: all 0.1s ease-in;
+	}
+
+	.mobile-line.mobile-line-active::before{
+		top: 0;
+		left: 0;
+		transform: rotate(45deg);
+		transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
+		background-color: #000;
+	}
+
+	.mobile-line.mobile-line-active::after{
+		top: 0;
+		left: 0;
+		transform: rotate(-45deg);
+		transition: top 0.2s ease-in, transform 0.2s ease-in 0.2s;
+		background-color: #000;
+	}
+
+	/* <!-- // ------------ MOBILE BUTTON ------------ --> */
+
+
+	.mobile-nav {
+		position: fixed;
+		height: 100vh;
+		width: 300px;
+		top: 0;
+		z-index: 10;
+		right: -300px;
+		background-color: #fff;
+		transition: transform 0.4s ease-in;
+	}
+
+	.mobile-nav.mobile-nav-active{
+		transform: translateX(-300px);
+		transition: transform 0.4s ease-in;
+	}
+
+	.mobile-nav__logo {
+		font-size: 36px;
+		margin: 90px 30px 30px 0;
+		color: #fff;
+		text-align: right;
+	}
+
+	.mobile-nav__list {
+		display: flex;
+		flex-direction: column;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.mobile-nav__link {
+		padding: 18px 0;
+		border-bottom: 1px solid rgba(#999, 0.35);
+		font-size: 22px;
+		color: #000;
+		text-decoration: none;
+		text-align: right;
+		&:last-child {
+			border-bottom: 1px solid transparent;
+		}
+	}
+
 }
 
 .main {
@@ -101,7 +230,7 @@
 }
 
 .info-img {
-	height: unset;
+
 }
 
 
@@ -110,7 +239,6 @@
 
 
 .about {
-
 	&__security {
 		@include base-flex;
 		flex-direction: column;
@@ -139,8 +267,32 @@
 }
 
 .about-wrapper {
-	background-color: #f9f9f9;
-	padding: 120px 100px;
+	overflow: hidden;
+	position: relative;
+	background-image: url(../images/about-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 120px 100px 170px;
+}
+
+.tool-1 {
+	position: absolute;
+	bottom: -20px;
+	right: -60px;
+}
+
+.tool-2 {
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	transform: translateX(-50%) rotate(-45deg);
+}
+
+.tool-3 {
+	position: absolute;
+	top: 20px;
+	right: 0;
 }
 
 .about-inner {
@@ -284,6 +436,83 @@
 				color: $base-color;
 			}
 		}	
+	}
+}
+
+.shop {
+	.modal {
+		&-dialog {
+			max-width: 1340px;
+			margin-top: 10vh;	
+		}
+		&-body {
+			padding: 40px;
+			position: relative;
+			.section-title {
+				text-align: left;
+			}
+		}
+		&-img {
+			
+		}
+		&-exit {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			z-index: 1;
+		}
+		&__select-wrapper {
+			display: flex;
+			align-items: center;
+		}
+		&__select-text {
+			font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+			font-size: 21px;
+			line-height: 29px;
+			color: $base-color;
+		}
+		#modal__select-1,
+		#modal__select-2,
+		#modal__select-3,
+		#modal__select-4,
+		#modal__select-5,
+		#modal__select-6 {
+			border: none;
+			margin-left: 15px;
+			color: #D40828;
+			font-family: 'IBM Plex Sans Condensed', sans-serif;
+			font-size: 21px;
+			line-height: 27px;
+			width: 165px;
+		}
+		&-text__col {
+			position: relative;
+		}
+		&-text {
+			margin-top: 35px;
+			font-family: 'IBM Plex Sans Condensed', sans-serif;
+			font-size: 21px;
+			line-height: 27px;
+		}
+		&-btn {
+			position: absolute;
+			bottom: 30px;
+			left: 15px;
+			background-color: transparent;
+			border: 1px solid #D40828;
+			border-radius: 2px;
+			padding: 23px 62px;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 22px;
+			letter-spacing: 0.714286px;
+			color: #D40828;
+			transition: 0.2s all ease-out;
+			&:hover {
+				background-color: #D40828;
+				color: #fff;
+			}
+		}
 	}
 }
 
