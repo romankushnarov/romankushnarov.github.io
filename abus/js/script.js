@@ -30,7 +30,7 @@ document.querySelector('.overlay').onclick = function() {
 // });
 
 document.querySelector('#shop__item-info__link1').addEventListener('click', function() {
-    setTimeout(() => {
-        document.querySelector('#compare-1').scrollIntoView({behavior: "smooth"}); 
-    }, 500);
+        setTimeout(() => {
+            document.querySelector('#compare-1').scrollIntoView({behavior: "smooth"}); 
+        }, 500);
 });
