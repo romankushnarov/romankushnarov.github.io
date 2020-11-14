@@ -466,6 +466,9 @@ table {
 .shop .modal-body .section-title {
   text-align: left;
 }
+.shop .modal-body .compare .section-title {
+  text-align: center;
+}
 .shop .modal-exit {
   position: absolute;
   right: 20px;
@@ -506,9 +509,7 @@ table {
   line-height: 27px;
 }
 .shop .modal-btn {
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
+  margin-top: 50px;
   background-color: transparent;
   border: 1px solid #D40828;
   border-radius: 2px;
@@ -622,9 +623,6 @@ table {
   .shop .modal-dialog {
     max-width: 1100px;
   }
-  .shop .modal-form {
-    padding-bottom: 150px;
-  }
 }
 @media (max-width: 1200px) {
   .main__inner-img {
@@ -687,9 +685,6 @@ table {
   .shop .modal-btn {
     bottom: 16px;
     padding: 18px 50px;
-  }
-  .shop .shop .modal-form {
-    padding-bottom: 120px;
   }
 
   .compare-th {
@@ -781,6 +776,13 @@ table {
   .shop .modal-dialog {
     max-width: 90%;
   }
+  .shop .modal-body .compare .section-title {
+    text-align: left;
+  }
+
+  .compare {
+    overflow-x: scroll;
+  }
 }
 @media (max-width: 767px) {
   .header {
@@ -828,7 +830,7 @@ table {
   }
 
   .compare {
-    padding: 40px 0;
+    padding: 20px 0;
     overflow-x: scroll;
   }
   .compare-th {
@@ -850,7 +852,7 @@ table {
   }
 
   .shop .modal-body .section-title {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 576px) {

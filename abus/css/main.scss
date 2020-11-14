@@ -221,10 +221,6 @@
 	align-items: center;
 }
 
-.section-title {
-
-}
-
 .info-text {
 	margin: 25px 0;
 }
@@ -324,9 +320,6 @@
 
 .size {
 	padding: 60px 0 40px;
-}
-
-.section-title {
 }
 
 .size-img {
@@ -451,6 +444,11 @@
 			.section-title {
 				text-align: left;
 			}
+			.compare {
+				.section-title {
+					text-align: center;
+				}
+			}
 		}
 		&-img {
 			
@@ -495,9 +493,10 @@
 			line-height: 27px;
 		}
 		&-btn {
-			position: absolute;
-			bottom: 30px;
-			left: 15px;
+			// position: absolute;
+			// bottom: 30px;
+			// left: 15px;
+			margin-top: 50px;
 			background-color: transparent;
 			border: 1px solid #D40828;
 			border-radius: 2px;
