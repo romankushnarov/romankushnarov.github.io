@@ -22,3 +22,15 @@ document.querySelector('.overlay').onclick = function() {
     document.querySelector('.overlay').classList.toggle('block');
     document.querySelector('body').classList.toggle('hidden');
 }
+
+// $('shopModal1').ready(function() {
+//     function scrollTo(hash) {
+//         location.hash = "#" + hash;
+//     }
+// });
+
+document.querySelector('#shop__item-info__link1').addEventListener('click', function() {
+    setTimeout(() => {
+        document.querySelector('#compare-1').scrollIntoView({behavior: "smooth"}); 
+    }, 500);
+});

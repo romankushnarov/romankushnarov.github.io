@@ -430,6 +430,7 @@ table {
   color: #F8F8F8;
 }
 .shop__item-info__link {
+  cursor: pointer;
   color: #fff;
   text-decoration: underline;
 }
