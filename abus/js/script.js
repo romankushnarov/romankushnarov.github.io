@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    const menuToggle = document.querySelector('#menuToggle');
-    const mobileMenuToggle = document.querySelector('#mobileMenuToggle');
+
+    // mobile menu
 
     menuToggle.onclick = function(){
         document.querySelector('.mobile-line').classList.toggle('mobile-line-active');
@@ -24,15 +24,19 @@ $(document).ready(function() {
         document.querySelector('body').classList.toggle('hidden');
     }
 
-    // $('shopModal1').ready(function() {
-    //     function scrollTo(hash) {
-    //         location.hash = "#" + hash;
-    //     }
-    // });
+    // pop up table delay
 
+    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     document.querySelector('#shop__item-info__link1').addEventListener('click', function() {
+        if (width > 576) {
+            delay(500);
+        } else {
+            delay(800);
+        }
+        function delay(time) {
             setTimeout(() => {
                 document.querySelector('#compare-1').scrollIntoView({behavior: "smooth"}); 
-            }, 800);
+            }, time);
+        }
     });
 });
