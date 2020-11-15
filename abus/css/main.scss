@@ -333,7 +333,7 @@
 
 .shop {
 	background-color: #fafafa;
-	padding: 100px 0 25px;
+	padding: 100px 0 10px;
 	&__item {
 		position: relative;
 		width: 75%;
@@ -392,6 +392,33 @@
 		padding: 17px;
 		color: #fff;
 		transition: 0.2s all ease-out;
+		&__header {
+			@include base-flex;
+		}
+		&__table {
+			max-width: 90px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 16px;
+			color: #FEFEFE;
+			position: relative;
+			&:hover {
+				color: #D40828;
+				cursor: pointer;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				top: 5px;
+				left: -30px;
+				height: 20px;
+				width: 20px;
+				background-image: url(../images/checked.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+		}
 		&__name {
 			font-size: 20px;
 			line-height: 26px;	

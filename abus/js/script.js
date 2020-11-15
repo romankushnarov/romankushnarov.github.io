@@ -24,19 +24,35 @@ $(document).ready(function() {
         document.querySelector('body').classList.toggle('hidden');
     }
 
-    // pop up table delay
-
+    // scroll to popup table delay
+    
     let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    document.querySelector('#shop__item-info__link1').addEventListener('click', function() {
-        if (width > 576) {
-            delay(500);
-        } else {
-            delay(800);
-        }
-        function delay(time) {
-            setTimeout(() => {
-                document.querySelector('#compare-1').scrollIntoView({behavior: "smooth"}); 
-            }, time);
-        }
+    
+    width > 576 ? time = 500 : time = 800;
+    
+    function delay(el) {
+        setTimeout(() => {
+            document.querySelector(el).scrollIntoView({behavior: "smooth"}); 
+        }, time);
+    }
+
+    document.querySelector('#shop__item-info__table1').addEventListener('click', function() {
+        delay('#compare-1');
     });
+    document.querySelector('#shop__item-info__table2').addEventListener('click', function() {
+        delay('#compare-2');
+    });
+    document.querySelector('#shop__item-info__table3').addEventListener('click', function() {
+        delay('#compare-3');
+    });
+    document.querySelector('#shop__item-info__table4').addEventListener('click', function() {
+        delay('#compare-4');
+    });
+    document.querySelector('#shop__item-info__table5').addEventListener('click', function() {
+        delay('#compare-5');
+    });
+    document.querySelector('#shop__item-info__table6').addEventListener('click', function() {
+        delay('#compare-6');
+    });
+    
 });

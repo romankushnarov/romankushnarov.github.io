@@ -357,7 +357,7 @@ table {
 
 .shop {
   background-color: #fafafa;
-  padding: 100px 0 25px;
+  padding: 100px 0 10px;
 }
 .shop__item {
   position: relative;
@@ -416,6 +416,35 @@ table {
   padding: 17px;
   color: #fff;
   transition: 0.2s all ease-out;
+}
+.shop__item-info__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop__item-info__table {
+  max-width: 90px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FEFEFE;
+  position: relative;
+}
+.shop__item-info__table:hover {
+  color: #D40828;
+  cursor: pointer;
+}
+.shop__item-info__table::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -30px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .shop__item-info__name {
   font-size: 20px;
@@ -619,7 +648,7 @@ table {
   }
 
   .shop {
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
   .shop .modal-dialog {
     max-width: 1100px;
@@ -668,6 +697,9 @@ table {
     max-width: 600px;
   }
 
+  .shop__item {
+    width: 90%;
+  }
   .shop .modal-dialog {
     margin-top: 5vh;
     max-width: 900px;
