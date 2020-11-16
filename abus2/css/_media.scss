@@ -260,8 +260,13 @@
     .header-logo__img {
         max-width: 130px;
     }
+    .main__inner-col__img {
+        order: -1;
+    }
     .main__inner-img {
         max-width: 65%;
+        position: relative;
+        left: -10px;
     }
     .info {
         padding: 40px 0 20px;
