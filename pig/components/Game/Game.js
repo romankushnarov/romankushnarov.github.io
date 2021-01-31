@@ -23,7 +23,7 @@ class Game {
 
         const html = `
             <p class="game__text">КЛИКНИ НА СВИНЬЮ, ЧТОБЫ УДАРИТЬ ЕЕ</p>
-            <img class="point" src="img/point.png" onmousedown="gameComponent.counterIncrease()"/>
+            <img class="point" src="img/point.png" onpointerdown="gameComponent.counterIncrease()"/>
             <p class="game__counter">УДАРОВ ПО СВИНЬЕ: 0</p>
             <p class="game__time">ВРЕМЕНИ ОСТАЛОСЬ: ${gameTime} СЕК.</p>
         `

@@ -7,7 +7,7 @@ class MenuEnd {
     render(value) {
         const html = `
             <div class="info-end">
-            <h1 class="info-end__title">ТЫ НАНЕС ${value} УДАРОВ! ЕЩЕ РАЗОЧЕК?</h1>
+            <h1 class="info-end__title">ВСЕГО НАНЕСЕНО УДАРОВ: ${value}!<br>ЕЩЕ РАЗОЧЕК?</h1>
             <i class="fas fa-redo info-end__btn-repeat" onclick="gameComponent.start()"></i>
             </div>
         `
