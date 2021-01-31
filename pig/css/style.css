@@ -62,84 +62,16 @@ html {
   box-sizing: inherit;
 }
 
-/* --------------- info --------------- */
-.info {
-  position: relative;
-  width: 100vw;
+
+/* root */
+
+#root {
+  width: 100%;
   height: 100vh;
 }
-.info-wrapper, .info .info-end {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #40798C;
-  border-radius: 10px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-}
-.info-wrapper .fa-arrow-down, .info .info-end .fa-arrow-down {
-  font-size: 22px;
-  color: #fff;
-}
-.info-wrapper .fa-redo, .info .info-end .fa-redo {
-  font-size: 22px;
-  color: #000;
-}
-.info-wrapper .fa-redo:hover, .info .info-end .fa-redo:hover {
-  color: #fff;
-}
-.info .info-end {
-  display: none;
-}
-.info__title {
-  text-align: center;
-  font-size: 28px;
-  line-height: 36px;
-  color: #fff;
-  max-width: 300px;
-  margin-bottom: 35px;
-}
-.info__btn-start, .info__btn-repeat {
-  margin: 25px auto 0;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  font-size: 26px;
-  line-height: 32px;
-  padding: 8px 38px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 2px solid #fff;
-  transition: 0.2s all ease-out;
-  outline: none;
-}
-.info__btn-start:hover, .info__btn-repeat:hover {
-  background-color: transparent;
-  color: #fff;
-}
-.info__text {
-  position: fixed;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 56px;
-  line-height: 70px;
-  letter-spacing: 12px;
-  color: rgba(190, 190, 190, 0.5);
-  text-align: center;
-}
 
-.point {
-  position: absolute;
-  width: 100px;
-  height: 80px;
-  cursor: pointer;
-  z-index: 1;
-}
+/* colors */
 
-/*# sourceMappingURL=style.css.map */
+:root {
+  --general-bg: rgb(245, 167, 180);
+}
