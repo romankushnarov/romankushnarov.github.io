@@ -33,7 +33,7 @@ class Game {
 
         function movePig() {
             let randomLeft = Math.random() * ((width - point.offsetWidth) - point.offsetWidth)
-            let randomTop = Math.random() * ((height- point.offsetHeight)- point.offsetHeight)
+            let randomTop = Math.random() * ((height - point.offsetHeight)- point.offsetHeight)
             point.style.left = randomLeft + 'px'
             point.style.top = randomTop + 'px'
             // console.log(interval);

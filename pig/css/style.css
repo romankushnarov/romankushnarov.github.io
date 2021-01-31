@@ -75,3 +75,13 @@ html {
 :root {
   --general-bg: rgb(245, 167, 180);
 }
+
+@media(max-width: 576px) {
+  #root {
+    position: absolute;
+    width: 95%;
+    height: 92.5vh;
+    top: 3.5vh;
+    left: 2.5%;
+  }
+}

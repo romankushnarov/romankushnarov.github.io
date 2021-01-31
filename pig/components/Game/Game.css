@@ -23,7 +23,7 @@
     position: absolute;
     top: 2vh;
     left: 2vw;
-    color: rgba(121, 121, 121, 0.75);
+    color: rgba(121, 121, 121, 0.4);
     font-size: 24px;
     line-height: 32px;
 }
@@ -32,7 +32,7 @@
     position: absolute;
     top: 2vh;
     right: 2vw;
-    color: rgba(121, 121, 121, 0.75);
+    color: rgba(121, 121, 121, 0.4);
     font-size: 24px;
     line-height: 32px;
 }
@@ -51,11 +51,12 @@
         font-size: 14px;
         line-height: 20px;
         left: 2vw;
+        top: 0;
     }
     .game__time {
         font-size: 14px;
         line-height: 20px;
-        top: 5vh;
+        top: 2.5vh;
         right: 0;
         left: 2vw;
     }
