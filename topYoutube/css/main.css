@@ -206,9 +206,9 @@ html {
       cursor: pointer;
       display: block; }
     .results__slider-inner .pull-left {
-      left: -40px; }
+      left: -60px; }
     .results__slider-inner .pull-right {
-      right: -40px; }
+      right: -60px; }
     .results__slider-inner .slick-dots {
       position: absolute;
       bottom: -35px;
