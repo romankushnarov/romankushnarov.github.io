@@ -300,10 +300,10 @@ html {
 
     &__slider {
         outline: none;
+        position: relative;
     }
 
     &__slider-inner {
-        position: relative;
         outline: none;
         .slick-arrow {
             position: absolute;
