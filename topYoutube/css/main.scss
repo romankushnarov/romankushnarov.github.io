@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    overflow: hidden;
     line-height: 1;
     font-family: 'Inter', sans-serif;
 }
@@ -477,10 +478,10 @@ html {
             cursor: pointer;
         }
         .pull-left {
-            left: -25px;
+            left: -45px;
         }
         .pull-right {
-            right: -25px;
+            right: -45px;
         }
         .slick-dots {
             position: absolute;
@@ -985,10 +986,10 @@ html {
         padding-bottom: 30px;
         &__slider {
             .pull-right {
-                right: 10px;
+                right: -10px;
             }
             .pull-left {
-                left: 10px;
+                left: -10px;
             }
         }
         &__slider-inner {
