@@ -324,6 +324,8 @@ html {
         background-color: #c4c4c4;
         margin: 0 5px;
         border-radius: 50%; }
+  .reviews__slider-item {
+    outline: none; }
   .reviews__slider-inner {
     width: 350px;
     height: 200px;
@@ -562,9 +564,9 @@ html {
     width: 80%;
     margin: 0 auto; }
     .reviews__slider .pull-right {
-      right: -25px; }
+      right: -40px; }
     .reviews__slider .pull-left {
-      left: -25px; }
+      left: -40px; }
   .reviews__slider-inner {
     width: 315px;
     height: 180px; }
@@ -667,9 +669,9 @@ html {
   .reviews {
     padding-bottom: 30px; }
     .reviews__slider {
-      width: 85%; }
+      width: 75%; }
     .reviews__slider-inner {
-      width: 70%; }
+      width: 100%; }
 
   .request__info-title {
     font-size: 18px;

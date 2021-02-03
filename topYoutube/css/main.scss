@@ -507,6 +507,9 @@ html {
         }
     }
 
+    &__slider-item {
+        outline: none;
+    }
     &__slider-inner {
         width: 350px;
         height: 200px;
@@ -849,10 +852,10 @@ html {
             width: 80%;
             margin: 0 auto;
             .pull-right {
-                right: -25px;
+                right: -40px;
             }
             .pull-left {
-                left: -25px;
+                left: -40px;
             }
         }
         &__slider-inner {
@@ -987,7 +990,7 @@ html {
     .reviews {
         padding-bottom: 30px;
         &__slider {
-            width: 85%;
+            width: 75%;
             // .pull-right {
             //     right: -10px;
             // }
@@ -996,7 +999,7 @@ html {
             // }
         }
         &__slider-inner {
-            width: 70%;
+            width: 100%;
         }
     }
     .request {
