@@ -846,11 +846,13 @@ html {
             margin-top: 30px;
         }
         &__slider {
+            width: 80%;
+            margin: 0 auto;
             .pull-right {
-                right: 25px;
+                right: -25px;
             }
             .pull-left {
-                left: 25px;
+                left: -25px;
             }
         }
         &__slider-inner {
@@ -985,12 +987,13 @@ html {
     .reviews {
         padding-bottom: 30px;
         &__slider {
-            .pull-right {
-                right: -10px;
-            }
-            .pull-left {
-                left: -10px;
-            }
+            width: 85%;
+            // .pull-right {
+            //     right: -10px;
+            // }
+            // .pull-left {
+            //     left: -10px;
+            // }
         }
         &__slider-inner {
             width: 70%;
