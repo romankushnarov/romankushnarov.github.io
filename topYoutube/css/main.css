@@ -201,7 +201,8 @@ html {
       outline: none;
       font-size: 38px;
       color: #F2575D;
-      cursor: pointer; }
+      cursor: pointer;
+      display: block; }
     .results__slider-inner .pull-left {
       left: -25px; }
     .results__slider-inner .pull-right {
