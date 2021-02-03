@@ -319,9 +319,11 @@ html {
         }
         .pull-left {
             left: -40px;
+            position: absolute;
         }
         .pull-right {
             right: -40px;
+            position: absolute;
         }
         .slick-dots {
             position: absolute;
@@ -476,9 +478,11 @@ html {
         }
         .pull-left {
             left: -25px;
+            position: absolute;
         }
         .pull-right {
             right: -25px;
+            position: absolute;
         }
         .slick-dots {
             position: absolute;
@@ -845,9 +849,11 @@ html {
         &__slider {
             .pull-right {
                 right: 25px;
+                position: absolute;
             }
             .pull-left {
                 left: 25px;
+                position: absolute;
             }
         }
         &__slider-inner {
@@ -984,9 +990,11 @@ html {
         &__slider {
             .pull-right {
                 right: 10px;
+                position: absolute;
             }
             .pull-left {
                 left: 10px;
+                position: absolute;
             }
         }
         &__slider-inner {
