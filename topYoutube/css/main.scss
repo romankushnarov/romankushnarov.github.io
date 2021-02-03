@@ -318,10 +318,10 @@ html {
             display: block;
         }
         .pull-left {
-            left: -25px;
+            left: -40px;
         }
         .pull-right {
-            right: -25px;
+            right: -40px;
         }
         .slick-dots {
             position: absolute;
@@ -352,7 +352,7 @@ html {
     }
     &__slider-item__img {
         margin: 0 auto;
-        // width: 90%;
+        width: 100%;
     }
 }
 

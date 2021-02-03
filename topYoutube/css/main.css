@@ -204,9 +204,9 @@ html {
       cursor: pointer;
       display: block; }
     .results__slider-inner .pull-left {
-      left: -25px; }
+      left: -40px; }
     .results__slider-inner .pull-right {
-      right: -25px; }
+      right: -40px; }
     .results__slider-inner .slick-dots {
       position: absolute;
       bottom: -35px;
@@ -229,7 +229,7 @@ html {
     outline: none; }
   .results__slider-item__img {
     margin: 0 auto;
-    width: 90%; }
+    width: 100%; }
 
 .about {
   padding: 50px 0 70px; }
