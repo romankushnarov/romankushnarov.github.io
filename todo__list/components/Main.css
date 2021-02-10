@@ -1,0 +1,139 @@
+#list {
+    margin: 10vh auto 0;
+    max-width: 650px;
+}
+
+.list-wrapper {
+    position: relative;
+}
+
+.list__title {
+    margin: 0 auto 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #fff;
+}
+
+.list__form {
+    background-color: #fff;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.list__input {
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.list__btn {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #fff;
+    color: #8D9EC6;
+    transition: 0.2s all ease-out;
+}
+
+.list__btn:hover {
+    cursor: pointer;
+    background-color: #BCD2EE;
+    color: #fff;
+}
+
+.list__inner {
+    background-color: #fff;
+    height: 60vh;
+    padding: 20px 40px 60px;
+    overflow-y: auto;
+}
+
+.list__item {
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #8D9EC6;
+    display: flex;
+    align-items: center;
+}
+
+.list__item-remove {
+    margin-right: 7px;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #8D9EC6;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: #fff;
+    transition: 0.2s background-color ease-out;
+}
+
+.list__item-remove:hover {
+    cursor: pointer;
+    background-color: #BCD2EE;
+}
+
+
+.list__item-checkbox {
+    margin-right: 10px;
+    display: block;
+}
+
+.list__item-checkbox:hover {
+    cursor: pointer;
+}
+
+.list__item-text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.list__clear {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    bottom: 15px;
+    background-color: #BCD2EE;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    transition: 0.2s background-color ease-out;
+}
+
+.list__clear:hover {
+    background-color: #8D9EC6;
+    cursor: pointer;
+}
+
+.list__notice {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: rgba(0,0,0,0.2);
+    cursor: default;
+}
+
+.undid {
+    text-decoration: line-through;
+}
+
+@media(max-width: 767px) {
+    #list {
+        margin: 5vh auto 0;
+        max-width: 90vw;
+    }
+}
