@@ -1,5 +1,5 @@
 #list {
-    margin: 10vh auto 0;
+    margin: 7vh auto 0;
     max-width: 650px;
 }
 
@@ -50,7 +50,7 @@
 
 .list__inner {
     background-color: #fff;
-    height: 60vh;
+    height: 50vh;
     padding: 20px 40px 60px;
     overflow-y: auto;
 }
